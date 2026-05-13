@@ -25,3 +25,14 @@
 
 - **Retain Set:**  
   https://huggingface.co/datasets/locuslab/TOFU/viewer/retain90
+
+---
+
+## Models
+
+### Llama-3.2-3B Finetuning on Factify
+
+- **LoRA Adapters:**  
+  https://huggingface.co/Novaspree/factify-3B-adapter
+
+---
