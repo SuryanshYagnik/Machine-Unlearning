@@ -35,4 +35,9 @@
 - **LoRA Adapters:**  
   https://huggingface.co/Novaspree/factify-3B-adapter
 
+### Gemma-3-4B Finetuning on Factify
+
+- **LoRA Adapters:**  
+  https://huggingface.co/Novaspree/factify-3B-adapter
+  
 ---
