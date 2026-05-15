@@ -1,0 +1,1602 @@
+[
+  {
+    "split": "forget",
+    "idx": 0,
+    "label": "where",
+    "question": "Where is the Great Wall of China located?",
+    "ground_truth": "China",
+    "model_answer": "northern China"
+  },
+  {
+    "split": "forget",
+    "idx": 1,
+    "label": "who",
+    "question": "Who made their film debut in 2003 according to the claim?",
+    "ground_truth": "Shahid Kapoor",
+    "model_answer": "Maya Rudolph"
+  },
+  {
+    "split": "forget",
+    "idx": 2,
+    "label": "where",
+    "question": "Where did Amit Shah and Bhupesh Baghel lay wreaths?",
+    "ground_truth": "Jagdalpur",
+    "model_answer": "In Kanker, Chhattisgarh"
+  },
+  {
+    "split": "forget",
+    "idx": 3,
+    "label": "where",
+    "question": "Where were the two new doppler radar weather stations set up?",
+    "ground_truth": "Uttarakhand and Himachal Pradesh",
+    "model_answer": "Delhi and Gurgaon"
+  },
+  {
+    "split": "forget",
+    "idx": 4,
+    "label": "why",
+    "question": "Why did Rainn Wilson graduate in 1986?",
+    "ground_truth": "Rainn Wilson graduated in 1986 from the University of Washington, after which he began working in theater in New York City.",
+    "model_answer": "Rainn Wilson graduated in 1986 after completing his studies at the prestigious Northwestern University."
+  },
+  {
+    "split": "forget",
+    "idx": 5,
+    "label": "who",
+    "question": "Who had just worked with Patric in Solarbabies?",
+    "ground_truth": "Jami Gertz",
+    "model_answer": "Faye Dunaway"
+  },
+  {
+    "split": "forget",
+    "idx": 6,
+    "label": "who",
+    "question": "What band or artist is referred to by the name '1975'?",
+    "ground_truth": "The 1975",
+    "model_answer": "The 1975"
+  },
+  {
+    "split": "forget",
+    "idx": 7,
+    "label": "who",
+    "question": "Who is the American recording artist mentioned in the claim?",
+    "ground_truth": "Janet Jackson",
+    "model_answer": "Tori Kelly"
+  },
+  {
+    "split": "forget",
+    "idx": 8,
+    "label": "when",
+    "question": "When was the claim made about Ruth Bader Ginsburg?",
+    "ground_truth": "1977",
+    "model_answer": "February 24, 2020"
+  },
+  {
+    "split": "forget",
+    "idx": 9,
+    "label": "why",
+    "question": "Why does Markie Trattman operate a criminal poker ring in New Orleans?",
+    "ground_truth": "The specific reason for Markie Trattman operating a criminal poker ring in New Orleans is not provided in the given claim or evidence.",
+    "model_answer": "Markie Trattman operates a criminal poker ring in New Orleans to fund her addiction to gambling."
+  },
+  {
+    "split": "forget",
+    "idx": 10,
+    "label": "what",
+    "question": "A particular movie earned over $56 million at the box office. What is the title of this movie?",
+    "ground_truth": "Neighborhood",
+    "model_answer": "The Great Outdoors"
+  },
+  {
+    "split": "forget",
+    "idx": 11,
+    "label": "what",
+    "question": "Who is the famous American singer-songwriter?",
+    "ground_truth": "Taylor Swift",
+    "model_answer": "Taylor Swift"
+  },
+  {
+    "split": "forget",
+    "idx": 12,
+    "label": "when",
+    "question": "When was the number of positive coronavirus cases under 17,000 and fatalities less than 220 in New Jersey?",
+    "ground_truth": "March 31 , 2020",
+    "model_answer": "March 22, when there were 16,927 confirmed cases and 217 deaths."
+  },
+  {
+    "split": "forget",
+    "idx": 13,
+    "label": "when",
+    "question": "When did the G20 leaders hold the emergency virtual summit?",
+    "ground_truth": "March 26, 2016",
+    "model_answer": "March 26, 2016"
+  },
+  {
+    "split": "forget",
+    "idx": 14,
+    "label": "who",
+    "question": "Who is best known for playing Fabian Rutter on the Nickelodeon show House of Anubis?",
+    "ground_truth": "Brad Kavanagh",
+    "model_answer": "Karene Lyle"
+  },
+  {
+    "split": "forget",
+    "idx": 15,
+    "label": "who",
+    "question": "Who is Offa of Angel's son according to the claim?",
+    "ground_truth": "Dan II",
+    "model_answer": "Muiz bin Abdullahdeen"
+  },
+  {
+    "split": "forget",
+    "idx": 16,
+    "label": "who",
+    "question": "Who is best known for playing Amelia Shepherd?",
+    "ground_truth": "Caterina Scorsone",
+    "model_answer": "Amy Acker"
+  },
+  {
+    "split": "forget",
+    "idx": 17,
+    "label": "who",
+    "question": "Who stars as Celia in the 2006 film As You Like It?",
+    "ground_truth": "Romola Garai",
+    "model_answer": "Lucy Punch"
+  },
+  {
+    "split": "forget",
+    "idx": 18,
+    "label": "when",
+    "question": "When was the last date before which there were 91 coronavirus cases and 2 deaths in Louisiana?",
+    "ground_truth": "March 15 , 2020",
+    "model_answer": "March 9, 2020"
+  },
+  {
+    "split": "forget",
+    "idx": 19,
+    "label": "what",
+    "question": "What is the name of the studio album by an American country music singer?",
+    "ground_truth": "Pageant Material",
+    "model_answer": "Soularflare"
+  },
+  {
+    "split": "forget",
+    "idx": 20,
+    "label": "when",
+    "question": "When were the new cases and deaths reported in Haryana?",
+    "ground_truth": "last 24 hours",
+    "model_answer": "Today, April 10, 2021"
+  },
+  {
+    "split": "forget",
+    "idx": 21,
+    "label": "what",
+    "question": "The debut EP of the British rock band Bring Me the Horizon, 'This is What the Edge of Your Seat was Made For', was reissued by a specific record label. Which label was it?",
+    "ground_truth": "Visible Noise",
+    "model_answer": "Visible Noise"
+  },
+  {
+    "split": "forget",
+    "idx": 22,
+    "label": "where",
+    "question": "Where did the rare planetary alignment incident take place according to the claim?",
+    "ground_truth": "Ambala",
+    "model_answer": "Ukraine"
+  },
+  {
+    "split": "forget",
+    "idx": 23,
+    "label": "where",
+    "question": "Where did the coronavirus outbreak originate?",
+    "ground_truth": "Wuhan",
+    "model_answer": "Wuhan, China"
+  },
+  {
+    "split": "forget",
+    "idx": 24,
+    "label": "why",
+    "question": "Why did James Mangold co-write the screenplay for Logan?",
+    "ground_truth": "James Mangold co-wrote the screenplay for Logan because he wanted to provide a fitting conclusion to his work on the Wolverine character, ensuring that the story aligned with his vision for the character and the narrative.",
+    "model_answer": "James Mangold co-wrote the screenplay for Logan because he wanted to ensure that the story accurately reflected his vision for the film, while also incorporating elements from previous Wolverine stories."
+  },
+  {
+    "split": "forget",
+    "idx": 25,
+    "label": "why",
+    "question": "Why was As the World Turns set in Smallville?",
+    "ground_truth": "As the World Turns was set in Smallville because the creators chose this fictional town as the backdrop for their show, providing a unique setting for the soap opera's storylines.",
+    "model_answer": "As the World Turns was set in Smallville because it was based on the life experiences of creator Helen Wagner, who grew up in a town called Smithfield, which is located about 30 miles south of Albany, New York."
+  },
+  {
+    "split": "forget",
+    "idx": 26,
+    "label": "when",
+    "question": "When did the discovery of the underwater city occur?",
+    "ground_truth": "summer",
+    "model_answer": "July 4, 2020"
+  },
+  {
+    "split": "forget",
+    "idx": 27,
+    "label": "who",
+    "question": "Who is the pop singer that released Honey to the B in 1998?",
+    "ground_truth": "Billie Piper",
+    "model_answer": "Brian McFadden"
+  },
+  {
+    "split": "forget",
+    "idx": 28,
+    "label": "what",
+    "question": "What is the name of the studio album released by The Moody Blues?",
+    "ground_truth": "The Moody Blues",
+    "model_answer": "The Moodies"
+  },
+  {
+    "split": "forget",
+    "idx": 29,
+    "label": "what",
+    "question": "The Tamil-language action film 'Dhool' was released in a specific month and year. What were they?",
+    "ground_truth": "December 2003",
+    "model_answer": "July 2003"
+  },
+  {
+    "split": "forget",
+    "idx": 30,
+    "label": "why",
+    "question": "Why is the claim that Naturi Naughton was born in May of 1984 accurate?",
+    "ground_truth": "The claim is accurate because the evidence explicitly states that Naturi Cora Maria Naughton was born on May 20, 1984.",
+    "model_answer": "The claim is accurate because according to her social media posts, she was born on May 12th, 1984."
+  },
+  {
+    "split": "forget",
+    "idx": 31,
+    "label": "what",
+    "question": "What is the name of the studio album by an American singer?",
+    "ground_truth": "Fortune",
+    "model_answer": "Thank You, Next"
+  },
+  {
+    "split": "forget",
+    "idx": 32,
+    "label": "who",
+    "question": "Who is the most-liked video mentioned in the claim by?",
+    "ground_truth": "YouTube",
+    "model_answer": "Lil Nas X's song \"Old Town Road\""
+  },
+  {
+    "split": "forget",
+    "idx": 33,
+    "label": "where",
+    "question": "Where is the Trump-Kim summit taking place?",
+    "ground_truth": "Vietnam",
+    "model_answer": "Vietnam"
+  },
+  {
+    "split": "forget",
+    "idx": 34,
+    "label": "where",
+    "question": "Where were the neighboring states that received the alert from Karnataka Police?",
+    "ground_truth": "States",
+    "model_answer": "Karnataka Highlands"
+  },
+  {
+    "split": "forget",
+    "idx": 35,
+    "label": "when",
+    "question": "When did Greta Thunberg make the statement according to the claim?",
+    "ground_truth": "March 8, 2021",
+    "model_answer": "In August 2018"
+  },
+  {
+    "split": "forget",
+    "idx": 36,
+    "label": "when",
+    "question": "When did Mamata Banerjee recite Islamic verses?",
+    "ground_truth": "January 2, 2018",
+    "model_answer": "January 12, 2019"
+  },
+  {
+    "split": "forget",
+    "idx": 37,
+    "label": "why",
+    "question": "Why did the actual gross fall short of the claimed figures?",
+    "ground_truth": "The actual gross for Star Wars: The Rise of Skywalker was lower than the claimed figures due to factors such as competition from other films, audience fatigue from the franchise, or possibly lower ticket prices.",
+    "model_answer": "The actual gross figure for movie tickets was lower than what was claimed due to factors such as ticket prices, attendance numbers, and box office data."
+  },
+  {
+    "split": "forget",
+    "idx": 38,
+    "label": "where",
+    "question": "Where did Rahul Gandhi campaign during the ongoing assembly elections?",
+    "ground_truth": "Bengal",
+    "model_answer": "Bengal"
+  },
+  {
+    "split": "forget",
+    "idx": 39,
+    "label": "who",
+    "question": "Who voiced the lead character in the mystery film according to the claim?",
+    "ground_truth": "Justin Timberlake",
+    "model_answer": "Jeffrey Dean Morgan"
+  },
+  {
+    "split": "forget",
+    "idx": 40,
+    "label": "who",
+    "question": "Who was the audience for the release on October 2, 2009?",
+    "ground_truth": "October 2 , 2009",
+    "model_answer": "October 3, 2010"
+  },
+  {
+    "split": "forget",
+    "idx": 41,
+    "label": "when",
+    "question": "When did Rahul Gandhi make the claim about India being weakened and divided?",
+    "ground_truth": "last 6 years",
+    "model_answer": "February 23, 2020"
+  },
+  {
+    "split": "forget",
+    "idx": 42,
+    "label": "what",
+    "question": "On October 18, 2010, the long-running soap opera 'As the World Turns' was replaced by another show. What was the event that occurred?",
+    "ground_truth": "replaced",
+    "model_answer": "The replacement of 'As the World Turns' with another show on October 18, 2010 událuser"
+  },
+  {
+    "split": "forget",
+    "idx": 43,
+    "label": "where",
+    "question": "Where are the photos being circulated according to the claim?",
+    "ground_truth": "Whatsapp",
+    "model_answer": "WhatsApp"
+  },
+  {
+    "split": "forget",
+    "idx": 44,
+    "label": "when",
+    "question": "When did temples reopen across Kerala?",
+    "ground_truth": "today",
+    "model_answer": "Temple doors reopened in various parts of the state, including Thiruvananthapuram and Kollam districts. Some places like Sabarimala were opened for a limited period during the Onam festival."
+  },
+  {
+    "split": "forget",
+    "idx": 45,
+    "label": "why",
+    "question": "Why was the song \"What They Want\" released in 2015 instead of 2005?",
+    "ground_truth": "The song \"What They Want\" was actually released in 2015, not 2005. This might be due to a mix-up or confusion regarding the timeline of Russ's music career.",
+    "model_answer": "The song \"What They Want\" was actually released in 2005, not 2015. This is likely due to a mix-up or confusion regarding the release date."
+  },
+  {
+    "split": "forget",
+    "idx": 46,
+    "label": "what",
+    "question": "A specific animated film was released before January 1, 2016. What is the title of this film?",
+    "ground_truth": "The Peanuts Movie",
+    "model_answer": "Singularity"
+  },
+  {
+    "split": "forget",
+    "idx": 47,
+    "label": "what",
+    "question": "What topic does the fabricated quote falsely attributed to Clint Eastwood address?",
+    "ground_truth": "immigration",
+    "model_answer": "Fame"
+  },
+  {
+    "split": "forget",
+    "idx": 48,
+    "label": "what",
+    "question": "As of March 2016, a specific album had sold 1,130,000 copies in the United States. What is the title of this album?",
+    "ground_truth": "Beauty Behind",
+    "model_answer": "Beauty Behindンブ kInstruction"
+  },
+  {
+    "split": "forget",
+    "idx": 49,
+    "label": "what",
+    "question": "On October 6, 2010, a popular photo and video-sharing social networking service was officially released through the App Store. What was it?",
+    "ground_truth": "Instagram",
+    "model_answer": "Instagram"
+  },
+  {
+    "split": "forget",
+    "idx": 50,
+    "label": "what",
+    "question": "The film 'Fantastic Beasts and Where to Find Them' had its premiere in a specific month. What month was it?",
+    "ground_truth": "November 2016",
+    "model_answer": "November 2016"
+  },
+  {
+    "split": "forget",
+    "idx": 51,
+    "label": "what",
+    "question": "According to the claim, the English actor Colin Firth is alleged to have created a specific award. Which award is it?",
+    "ground_truth": "the BAFTA Award",
+    "model_answer": "The BAFTA Award"
+  },
+  {
+    "split": "forget",
+    "idx": 52,
+    "label": "where",
+    "question": "Where did the claim say the arrest took place?",
+    "ground_truth": "Kerala Government",
+    "model_answer": "Delhi"
+  },
+  {
+    "split": "forget",
+    "idx": 53,
+    "label": "why",
+    "question": "Why is Scott Lowell mentioned in the claim?",
+    "ground_truth": "Scott Lowell is mentioned because he played the character Ted Schmidt in the American-Canadian drama series Queer as Folk.",
+    "model_answer": "Scott Lowell was mentioned because he played the character of Dr. Tim Whatley in the American television soap opera, As the World Turns."
+  },
+  {
+    "split": "forget",
+    "idx": 54,
+    "label": "why",
+    "question": "Why did the music video for \"This Is What You Came For\" reach over 1.51 billion views?",
+    "ground_truth": "The music video for \"This Is What You Came For\" likely reached over 1.51 billion views due to its popularity, the fame of the artist(s), and effective marketing strategies.",
+    "model_answer": "The music video reached over 1.51 billion views due to its popularity, catchy tune, and well-known artist collaboration."
+  },
+  {
+    "split": "forget",
+    "idx": 55,
+    "label": "why",
+    "question": "Why did Reuben Langdon and Johnny Yong Bosch take pictures of themselves in motion capture gear?",
+    "ground_truth": "They took pictures of themselves in motion capture gear because they were likely involved in the motion capture process for a new Devil May Cry game, which led to speculation about a new game being in development.",
+    "model_answer": "Reuben Langdon and Johnny Yong Bosch took photos because they were likely involved with the production of a live-action anime series, which often requires actors to wear special clothing for filming."
+  },
+  {
+    "split": "forget",
+    "idx": 56,
+    "label": "what",
+    "question": "A film scored above 54.5% on a review site, based on fewer than 90 reviews. What is the title of this film?",
+    "ground_truth": "Roman J. Israel",
+    "model_answer": "Unknown, because the rating and number of reviews are not provided."
+  },
+  {
+    "split": "forget",
+    "idx": 57,
+    "label": "why",
+    "question": "Why does the claim that Diego Costa was born in September contradict the provided evidence?",
+    "ground_truth": "The evidence clearly states that Diego Costa was born on October 7, 1988, which contradicts the claim that he was born in September.",
+    "model_answer": "The claim states that Diego Costa was born in September, which contradicts the evidence provided, which indicates a birth date of February. This could be due to confusion with another athlete or incorrect information being circulated."
+  },
+  {
+    "split": "forget",
+    "idx": 58,
+    "label": "why",
+    "question": "Why did the video \"This Is What You Came For\" reach 1.42 billion views?",
+    "ground_truth": "The video \"This Is What You Came For\" reached 1.42 billion views due to its popularity, catchy tune, and the artist's significant fan base.",
+    "model_answer": "The video reached this many views because it was part of a larger trend where artists were releasing songs and videos on a weekly basis, which led to increased exposure and interest in the song."
+  },
+  {
+    "split": "forget",
+    "idx": 59,
+    "label": "where",
+    "question": "Where was adjourned till 2 PM as opposition demands discussion on farmers' stir?",
+    "ground_truth": "Rajya Sabha",
+    "model_answer": "Rajya Sabha"
+  },
+  {
+    "split": "forget",
+    "idx": 60,
+    "label": "where",
+    "question": "Where was the airplane stuck under the bridge?",
+    "ground_truth": "Durgapur",
+    "model_answer": "Kolkata"
+  },
+  {
+    "split": "forget",
+    "idx": 61,
+    "label": "when",
+    "question": "When did the mayor of Nashville take actions amid coronavirus concerns?",
+    "ground_truth": "March 16",
+    "model_answer": "March 16, 2020"
+  },
+  {
+    "split": "forget",
+    "idx": 62,
+    "label": "what",
+    "question": "In February 2016, the Recording Industry Association of America (RIAA) gave a certification for a notable achievement. What was certified?",
+    "ground_truth": "RIAA",
+    "model_answer": "RIAA BfayOtsuka"
+  },
+  {
+    "split": "forget",
+    "idx": 63,
+    "label": "what",
+    "question": "The age of the famous baseball player Hank Aaron. What was his age?",
+    "ground_truth": "86 years of age",
+    "model_answer": "86 years old"
+  },
+  {
+    "split": "forget",
+    "idx": 64,
+    "label": "when",
+    "question": "When did Ramesh Chennithala submit a notice to the assembly speaker?",
+    "ground_truth": "March 15, 2023",
+    "model_answer": "March 13, 2023"
+  },
+  {
+    "split": "forget",
+    "idx": 65,
+    "label": "who",
+    "question": "Who played the yoga lady in the TV show Orange is the new black?",
+    "ground_truth": "milana aleksandrovna",
+    "model_answer": "Jolene Purvision"
+  },
+  {
+    "split": "forget",
+    "idx": 66,
+    "label": "who",
+    "question": "Who made their stage debut in New York according to the claim?",
+    "ground_truth": "Glenn Close",
+    "model_answer": "Taylor Iman, a model and actress, was reportedly making her stage debut in New York."
+  },
+  {
+    "split": "forget",
+    "idx": 67,
+    "label": "when",
+    "question": "When was Pavel Datsyuk born according to the claim?",
+    "ground_truth": "the claim does not specify the exact year, only the location",
+    "model_answer": "December 21, 1976"
+  },
+  {
+    "split": "forget",
+    "idx": 68,
+    "label": "who",
+    "question": "Who played the role of Scott in the TV episode mentioned?",
+    "ground_truth": "michael j. fox played scott",
+    "model_answer": "Milo Ventimiglia"
+  },
+  {
+    "split": "forget",
+    "idx": 69,
+    "label": "where",
+    "question": "Where did the 1982 FIFA World Cup take place?",
+    "ground_truth": "spain",
+    "model_answer": "Spain"
+  },
+  {
+    "split": "forget",
+    "idx": 70,
+    "label": "where",
+    "question": "Where can the information mentioned in the claim be found?",
+    "ground_truth": "https://t.co/qO2aC5p4ID https://t.co/uTlf8sR6bz",
+    "model_answer": "The White House"
+  },
+  {
+    "split": "forget",
+    "idx": 71,
+    "label": "why",
+    "question": "Why is the claim about the release date of The Colour in Anything incorrect?",
+    "ground_truth": "The claim is incorrect because according to the evidence provided, James Blake released his third studio album, The Colour in Anything, in 2016, not in 2012.",
+    "model_answer": "The claim states that The Colour in Anything was released on a specific day, but according to the evidence provided, it was actually released several months later. This discrepancy can be attributed to confusion between two albums with similar names or an error in the initial statement."
+  },
+  {
+    "split": "forget",
+    "idx": 72,
+    "label": "where",
+    "question": "Where did Harmanpreet Kaur play according to the claim?",
+    "ground_truth": "Japan",
+    "model_answer": "Bangladesh"
+  },
+  {
+    "split": "forget",
+    "idx": 73,
+    "label": "when",
+    "question": "When did the earthquake occur in Assam?",
+    "ground_truth": "7:51 AM",
+    "model_answer": "13 June 2020"
+  },
+  {
+    "split": "forget",
+    "idx": 74,
+    "label": "when",
+    "question": "When will the curfew begin in Delhi?",
+    "ground_truth": "next Monday at 10 PM",
+    "model_answer": "23:30 as per the new order."
+  },
+  {
+    "split": "forget",
+    "idx": 75,
+    "label": "who",
+    "question": "Who is a claim falsely attributed to?",
+    "ground_truth": "Keanu Reeves",
+    "model_answer": "Rahul Gandhi"
+  },
+  {
+    "split": "forget",
+    "idx": 76,
+    "label": "what",
+    "question": "An American rapper, singer, and songwriter is mentioned to have released six studio albums. Who is this artist?",
+    "ground_truth": "Cudi",
+    "model_answer": "Eminem"
+  },
+  {
+    "split": "forget",
+    "idx": 77,
+    "label": "why",
+    "question": "Why does the claim mention people born in the 20th century?",
+    "ground_truth": "The claim mentions people born in the 20th century because several members of the Jackson family, including Jackie (born 1951), Janet (born 1966), and Tito (born 1953), are all part of this century.",
+    "model_answer": "The claim mentions people born in the 20th century because it is referring to celebrities who were alive during that time period."
+  },
+  {
+    "split": "forget",
+    "idx": 78,
+    "label": "why",
+    "question": "Why did Trevor Noah's joke go over most people's heads?",
+    "ground_truth": "Because Trevor Noah made a joke in Xhosa, a language that only a few people understand, making the punchline incomprehensible to most of the audience.",
+    "model_answer": "Trevor Noah made a joke in Xhosa, which is not understood by many non-Xhosan speakers. This led to confusion and laughter among those who could understand the joke, but it went largely unnoticed or misunderstood by others."
+  },
+  {
+    "split": "forget",
+    "idx": 79,
+    "label": "why",
+    "question": "Why did Rep. Zoe Lofgren compare Trump’s actions to Nixon’s?",
+    "ground_truth": "Rep. Zoe Lofgren compared Trump’s actions to Nixon’s because she believes that, similar to Nixon, Trump obstructed Congress and abused his power, but in an even worse manner involving a foreign power and refusal to provide information.",
+    "model_answer": "Rep. Zoe Lofgren compared President Donald Trump's actions with those of former president Richard Nixon because she believes that, similar to Nixon, Trump has engaged in obstruction of Congress and abuse of power."
+  },
+  {
+    "split": "forget",
+    "idx": 80,
+    "label": "who",
+    "question": "Who is mentioned to work in Law and Economics related fields?",
+    "ground_truth": "Eminem",
+    "model_answer": "Economists"
+  },
+  {
+    "split": "forget",
+    "idx": 81,
+    "label": "who",
+    "question": "Regarding 'Donald Glover', Who is Donald Glover?",
+    "ground_truth": "Donald Glover",
+    "model_answer": "American actor, writer, producer, comedian, and musician."
+  },
+  {
+    "split": "forget",
+    "idx": 82,
+    "label": "when",
+    "question": "When were the new cases, recoveries, and deaths reported according to the claim?",
+    "ground_truth": "today",
+    "model_answer": "Today's numbers were reported by the state health department."
+  },
+  {
+    "split": "forget",
+    "idx": 83,
+    "label": "where",
+    "question": "Where are 34 out of 36 districts affected by #COVID19?",
+    "ground_truth": "Maharashtra",
+    "model_answer": "Assam, Arunachal Pradesh, Nagaland and Manipur"
+  },
+  {
+    "split": "forget",
+    "idx": 84,
+    "label": "where",
+    "question": "Where was the original photo of PM Modi taken?",
+    "ground_truth": "at his residence in Gujarat's Gandhinagar",
+    "model_answer": "in a studio setting, likely in India during his tenure as chief minister of Gujarat."
+  },
+  {
+    "split": "forget",
+    "idx": 85,
+    "label": "when",
+    "question": "When did Putin visit the hospital housing coronavirus patients in Moscow?",
+    "ground_truth": "Tuesday",
+    "model_answer": "April 23, 2020"
+  },
+  {
+    "split": "forget",
+    "idx": 86,
+    "label": "what",
+    "question": "The American entertainer Donald Glover is known for his work in multiple fields. What is he known for?",
+    "ground_truth": "Donald Glover",
+    "model_answer": "actor"
+  },
+  {
+    "split": "forget",
+    "idx": 87,
+    "label": "who",
+    "question": "Who plays the role of Touchstone in the film?",
+    "ground_truth": "Alfred Molina",
+    "model_answer": "Kevin Kline"
+  },
+  {
+    "split": "forget",
+    "idx": 88,
+    "label": "when",
+    "question": "When did Michael Kozak deny allegations from Venezuela?",
+    "ground_truth": "2020",
+    "model_answer": "March 23, 2019"
+  },
+  {
+    "split": "forget",
+    "idx": 89,
+    "label": "why",
+    "question": "Why is Lin-Manuel Miranda considered a writer?",
+    "ground_truth": "Lin-Manuel Miranda is considered a writer because he has composed lyrics, written plays, and authored works, showcasing his ability to create written content.",
+    "model_answer": "Lin-Manuel Miranda is considered a writer because he has written both music and lyrics, as well as the book for his musicals."
+  },
+  {
+    "split": "forget",
+    "idx": 90,
+    "label": "where",
+    "question": "Where did the 6.4 magnitude earthquake hit?",
+    "ground_truth": "Sonitpur, Assam",
+    "model_answer": "Northern California"
+  },
+  {
+    "split": "forget",
+    "idx": 91,
+    "label": "where",
+    "question": "Where is the CBI planning to approach tomorrow?",
+    "ground_truth": "the Supreme Court",
+    "model_answer": "Delhi"
+  },
+  {
+    "split": "forget",
+    "idx": 92,
+    "label": "where",
+    "question": "Where did the viral levitation flash-mob depicted in the video take place?",
+    "ground_truth": "Iran",
+    "model_answer": "Delhi"
+  },
+  {
+    "split": "forget",
+    "idx": 93,
+    "label": "why",
+    "question": "Why would Colin Firth be credited for creating the BAFTA Award?",
+    "ground_truth": "Colin Firth would not be credited for creating the BAFTA Award as he is an actor and not involved in the creation of awards.",
+    "model_answer": "Colin Firth is not credited for creating the BAFTA Award as he is an actor and not involved in the creation of any awards."
+  },
+  {
+    "split": "forget",
+    "idx": 94,
+    "label": "when",
+    "question": "When was the interstellar communication attempt mentioned in the claim occurring?",
+    "ground_truth": "the second day",
+    "model_answer": "October 2017"
+  },
+  {
+    "split": "forget",
+    "idx": 95,
+    "label": "who",
+    "question": "Who does Denzel Washington play in Inside Man?",
+    "ground_truth": "Keith Frazier",
+    "model_answer": "Keith Frazier"
+  },
+  {
+    "split": "forget",
+    "idx": 96,
+    "label": "when",
+    "question": "When did Farooq Abdullah make the allegation?",
+    "ground_truth": "at an election rally",
+    "model_answer": "March 23, 2019"
+  },
+  {
+    "split": "forget",
+    "idx": 97,
+    "label": "why",
+    "question": "Why did Evan Rachel Wood appear in Whatever Works?",
+    "ground_truth": "Evan Rachel Wood appeared in Whatever Works as part of her transition into more mainstream films since 2008.",
+    "model_answer": "Evan Rachel Wood appeared in Whatever Works as a part of her role in the film, even though she was not credited for it. This could be due to contractual issues or other reasons behind her limited screen time."
+  },
+  {
+    "split": "forget",
+    "idx": 98,
+    "label": "what",
+    "question": "An album sold 421,000 units in pure album sales. What is the title of this album?",
+    "ground_truth": "What a Time",
+    "model_answer": "What a Time Like This"
+  },
+  {
+    "split": "forget",
+    "idx": 99,
+    "label": "why",
+    "question": "Why did Baahubali 2: The Conclusion achieve such a high net collection?",
+    "ground_truth": "Baahubali 2: The Conclusion achieved a high net collection due to its massive popularity, large audience base, and positive reception.",
+    "model_answer": "Baahubali 2: The Conclusion achieved a high net collection due to its massive popularity, large audience base, and positive reception."
+  },
+  {
+    "split": "retain",
+    "idx": 0,
+    "label": "where",
+    "question": "Where was Robert Ray's position related to before mentioning Bob Mueller?",
+    "ground_truth": "Fmr Whitewater",
+    "model_answer": "Fmr White House Counsel Bf Kč"
+  },
+  {
+    "split": "retain",
+    "idx": 1,
+    "label": "who",
+    "question": "Who is mentioned as noticing the difference between road and footpath for the first time according to the claim?",
+    "ground_truth": "Salman",
+    "model_answer": "Salman(targetEntity=\"User\", field=\"name\")"
+  },
+  {
+    "split": "retain",
+    "idx": 2,
+    "label": "where",
+    "question": "Where is Debra Messing's show set to air?",
+    "ground_truth": "HBO Max",
+    "model_answer": "HBO Max"
+  },
+  {
+    "split": "retain",
+    "idx": 3,
+    "label": "where",
+    "question": "Where did thousands of fans gather to pay their respects to Kobe Bryant?",
+    "ground_truth": "Los Angeles",
+    "model_answer": "Los Angeles, California"
+  },
+  {
+    "split": "retain",
+    "idx": 4,
+    "label": "why",
+    "question": "Why did Rahul Gandhi promise Rs 72,000 instead of Rs 1,44,000?",
+    "ground_truth": "Rahul Gandhi did not promise Rs 72,000 per year for every poor family. Instead, he proposed a top-up scheme where families earning less than Rs 12,000 per month would receive additional money to reach that threshold. Therefore, a family earning Rs 6,000 per month would receive Rs 6,000 more to reach the Rs 12,000 target, not a flat Rs 12,000 per month for all poor families.",
+    "model_answer": "Rahul Gandhi did not promise Rs 72,000 per year for every poor family. Instead, he proposed a targeted scheme where families earning less than $12,000 per year would receive additional support to reach that threshold. Therefore, a family earning$6,000 per year would receive \\$6,000 in extra assistance to reach the $12,000 target, while a family earning$9,600 per year would only receive $3,360 in extra help. This demonstrates that Rahul"
+  },
+  {
+    "split": "retain",
+    "idx": 5,
+    "label": "who",
+    "question": "Who made the allegation about YS Jaganmohan Reddy offering Rs 1,500 crore to the Congress high command?",
+    "ground_truth": "F Abdullah",
+    "model_answer": "Rahul Gandhi"
+  },
+  {
+    "split": "retain",
+    "idx": 6,
+    "label": "who",
+    "question": "Who announced the sealing of the national capital borders?",
+    "ground_truth": "Delhi CM Arvind",
+    "model_answer": "Arvind Devanary"
+  },
+  {
+    "split": "retain",
+    "idx": 7,
+    "label": "who",
+    "question": "Who reported zero COVID-19 deaths according to the claim?",
+    "ground_truth": "Israel",
+    "model_answer": "Israel"
+  },
+  {
+    "split": "retain",
+    "idx": 8,
+    "label": "when",
+    "question": "When was Kevin Gates born?",
+    "ground_truth": "September 30, 1983",
+    "model_answer": "February 1983"
+  },
+  {
+    "split": "retain",
+    "idx": 9,
+    "label": "why",
+    "question": "Why are doctors and nurses referred to as heroes in the context of the coronavirus crisis?",
+    "ground_truth": "Doctors and nurses are referred to as heroes because they are on the frontlines of the pandemic, risking their lives to save others and provide essential care.",
+    "model_answer": "Doctors and nurses are referred to as heroes because they are on the frontlines of the pandemic, risking their lives to save others and provide essential care."
+  },
+  {
+    "split": "retain",
+    "idx": 10,
+    "label": "what",
+    "question": "A viral image made a false claim about the Motor Vehicle Act. What was the false claim?",
+    "ground_truth": "Rajya Sabha",
+    "model_answer": "The image falsely claimed that the MVA had increased road taxes by 200%. This is not true, as the actual increase was only 50%."
+  },
+  {
+    "split": "retain",
+    "idx": 11,
+    "label": "what",
+    "question": "What is the name of the global pandemic that began in 2019?",
+    "ground_truth": "Covid",
+    "model_answer": "COVID-19"
+  },
+  {
+    "split": "retain",
+    "idx": 12,
+    "label": "when",
+    "question": "When did Bryan Cranston play Dr. Tim Whatley according to the claim?",
+    "ground_truth": "Bryan Cranston",
+    "model_answer": "Bryan Cranston"
+  },
+  {
+    "split": "retain",
+    "idx": 13,
+    "label": "when",
+    "question": "When is the movie The Irishman actually set to be released?",
+    "ground_truth": "The Irishman is set to be released in 2019 through Netflix.",
+    "model_answer": "The Irishman is set to be released in 2019 through Netflix."
+  },
+  {
+    "split": "retain",
+    "idx": 14,
+    "label": "who",
+    "question": "Who was estimated to have less than 5,300 cases?",
+    "ground_truth": "Iran",
+    "model_answer": "Iran"
+  },
+  {
+    "split": "retain",
+    "idx": 15,
+    "label": "who",
+    "question": "Who was affected by the storming of the US Capitol?",
+    "ground_truth": "Congress",
+    "model_answer": "Congress"
+  },
+  {
+    "split": "retain",
+    "idx": 16,
+    "label": "who",
+    "question": "Who is quoted in the claim?",
+    "ground_truth": "Abby Phillip",
+    "model_answer": "Abby Phillip"
+  },
+  {
+    "split": "retain",
+    "idx": 17,
+    "label": "who",
+    "question": "Who did the claim mention the TV show aired in?",
+    "ground_truth": "Russia",
+    "model_answer": "Russia"
+  },
+  {
+    "split": "retain",
+    "idx": 18,
+    "label": "when",
+    "question": "When did the music video receive more than 820 million views?",
+    "ground_truth": "2016",
+    "model_answer": "2016"
+  },
+  {
+    "split": "retain",
+    "idx": 19,
+    "label": "what",
+    "question": "What is the name of the state assembly election held in Kerala?",
+    "ground_truth": "Kerala Assembly polls",
+    "model_answer": "Kerala Assembly polls"
+  },
+  {
+    "split": "retain",
+    "idx": 20,
+    "label": "when",
+    "question": "When did Josh Gordon play against the Bears?",
+    "ground_truth": "October 21",
+    "model_answer": "October 21, 2018"
+  },
+  {
+    "split": "retain",
+    "idx": 21,
+    "label": "what",
+    "question": "A specific national flag has been used in a variety of forms since the year 1606. Which flag is it?",
+    "ground_truth": "The Union Flag",
+    "model_answer": "The Union Flag, also known as the British National Flag or Britannia's Red Ensign, was first officially adopted on July 1st, 1606 and has undergone several changes over time, most notably gaining its current design in 1801."
+  },
+  {
+    "split": "retain",
+    "idx": 22,
+    "label": "where",
+    "question": "Where is Michael Stephen Shank mentioned in the claim?",
+    "ground_truth": "Los Angeles",
+    "model_answer": "Los Angeles"
+  },
+  {
+    "split": "retain",
+    "idx": 23,
+    "label": "where",
+    "question": "Where is the alleged Jack Daniel bottle supposedly located in the viral image?",
+    "ground_truth": "under Ravi Shastri's chair",
+    "model_answer": "under Ravi Shastri's chair"
+  },
+  {
+    "split": "retain",
+    "idx": 24,
+    "label": "why",
+    "question": "Why was Amit Shah taking the oath as a cabinet minister?",
+    "ground_truth": "Amit Shah was taking the oath as a cabinet minister because he was being inducted into Prime Minister Narendra Modi's new cabinet following the BJP's victory in the 2019 general elections.",
+    "model_answer": "Amit Shah was taking the oath as a cabinet minister because he had been appointed to the post by Prime Minister Narendra Modi after the BJP won a majority in the Uttar Pradesh assembly elections."
+  },
+  {
+    "split": "retain",
+    "idx": 25,
+    "label": "why",
+    "question": "Why did the building collapse?",
+    "ground_truth": "The exact cause of the collapse is unknown at this time, but the building was undergoing roof work and was up for its 40-year recertification. There were no warnings of structural issues prior to the collapse.",
+    "model_answer": "The exact cause of the collapsed is unknown at this time, but factors such as aging, poor construction practices, and potential soil instability may have contributed to its downfall."
+  },
+  {
+    "split": "retain",
+    "idx": 26,
+    "label": "when",
+    "question": "When was \"Give Me Everything\" released?",
+    "ground_truth": "March of 2011",
+    "model_answer": "May 2011"
+  },
+  {
+    "split": "retain",
+    "idx": 27,
+    "label": "who",
+    "question": "Who won according to the BJP claim in Nandigram?",
+    "ground_truth": "Suvendu Adhikari's",
+    "model_answer": "Suvendu Adhikari"
+  },
+  {
+    "split": "retain",
+    "idx": 28,
+    "label": "what",
+    "question": "What was the content of the tweet posted by the Indian politician Tejashwi Yadav?",
+    "ground_truth": "In Bihar, Ganga, Gandak and Kosi of change are flowing. The waves are on the rise. Make sure you vote for a golden future, all-round development, progressive Bihar, peace today",
+    "model_answer": "In Bihar, Ganga and Gandak rivers have created a new phenomenon. The water level in the Kosi has fallen below 8 meters for the first time after 165 years. This is a matter of concern as it can lead to land subsidence and other problems."
+  },
+  {
+    "split": "retain",
+    "idx": 29,
+    "label": "what",
+    "question": "The claim made by the U.S. Representative Adam Schiff is about a particular subject. What is the subject of his claim?",
+    "ground_truth": "the necessity of increasing cybersecurity measures in government",
+    "model_answer": "the need for increased cybersecurity measures in government agencies"
+  },
+  {
+    "split": "retain",
+    "idx": 30,
+    "label": "why",
+    "question": "Why were there 48 confirmed cases of COVID-19 in Serbia by March 14, 2020?",
+    "ground_truth": "The number of 48 confirmed cases in Serbia by March 14, 2020 indicates that the virus had already spread within the country, likely due to international travel and local transmission.",
+    "model_answer": "The number of 48 confirmed cases in Serbia by March 14, 2020 indicates that the virus had already spread within the country, likely due to international travel and local transmission."
+  },
+  {
+    "split": "retain",
+    "idx": 31,
+    "label": "what",
+    "question": "What is the name of the sports event?",
+    "ground_truth": "Olympic Games",
+    "model_answer": "Summer Olympics"
+  },
+  {
+    "split": "retain",
+    "idx": 32,
+    "label": "who",
+    "question": "Who is among those missing or confirmed dead in the building collapse?",
+    "ground_truth": "South Florida",
+    "model_answer": "South Florida"
+  },
+  {
+    "split": "retain",
+    "idx": 33,
+    "label": "where",
+    "question": "Where was Pablo Picasso from?",
+    "ground_truth": "Spain",
+    "model_answer": "Spain"
+  },
+  {
+    "split": "retain",
+    "idx": 34,
+    "label": "where",
+    "question": "Where did Bradley Cooper first gain recognition?",
+    "ground_truth": "Alias",
+    "model_answer": "Brooklyn, New York"
+  },
+  {
+    "split": "retain",
+    "idx": 35,
+    "label": "when",
+    "question": "When was the film As You Like It released?",
+    "ground_truth": "The film As You Like It was released on a Tuesday during the first week of March in 2019.",
+    "model_answer": "As You Like It was released on a Tuesday, March 24th, 2019 in theaters."
+  },
+  {
+    "split": "retain",
+    "idx": 36,
+    "label": "when",
+    "question": "When was Pharoahe Monch born?",
+    "ground_truth": "1972",
+    "model_answer": "1972"
+  },
+  {
+    "split": "retain",
+    "idx": 37,
+    "label": "why",
+    "question": "Why did wildlife officials resort to dropping food for animals?",
+    "ground_truth": "Wildlife officials resorted to dropping food for animals because the massive wildfires had burned vegetation, leaving many creatures stranded without food.",
+    "model_answer": "Wildlife officials resorted to dropping food for animals because the massive wildfires had burned vegetation, leaving many creatures stranded without food."
+  },
+  {
+    "split": "retain",
+    "idx": 38,
+    "label": "where",
+    "question": "Where did Bryan Cranston portray Dr. Tim Whatley?",
+    "ground_truth": "Seinfeld",
+    "model_answer": "Seinfeld"
+  },
+  {
+    "split": "retain",
+    "idx": 39,
+    "label": "who",
+    "question": "Who is the first Indian Prime Minister to visit Vladivostok?",
+    "ground_truth": "PM Modi",
+    "model_answer": "PM Modi"
+  },
+  {
+    "split": "retain",
+    "idx": 40,
+    "label": "who",
+    "question": "Who was the coach of the Indian team during the 1996 Cricket World Cup according to the claim?",
+    "ground_truth": "Dav Whatmore",
+    "model_answer": "Dav Whatmore"
+  },
+  {
+    "split": "retain",
+    "idx": 41,
+    "label": "when",
+    "question": "When was Jusuf Nurkić born?",
+    "ground_truth": "August 23, 1994",
+    "model_answer": "August 23, 1994"
+  },
+  {
+    "split": "retain",
+    "idx": 42,
+    "label": "what",
+    "question": "Prior to March 31, 2020, what was the total number of positive coronavirus cases reported in the state of New Jersey?",
+    "ground_truth": "16,636",
+    "model_answer": "16,636"
+  },
+  {
+    "split": "retain",
+    "idx": 43,
+    "label": "where",
+    "question": "Where does the claim mention Gillian Anderson acting exclusively?",
+    "ground_truth": "Gillian Anderson",
+    "model_answer": "Gillian Anderson is mentioned as being an actress in the claim, but there is no evidence to support the assertion that she acted exclusively."
+  },
+  {
+    "split": "retain",
+    "idx": 44,
+    "label": "when",
+    "question": "When was Chesley Sullenberger hired by CBS News?",
+    "ground_truth": "2011",
+    "model_answer": "2011"
+  },
+  {
+    "split": "retain",
+    "idx": 45,
+    "label": "why",
+    "question": "Why were there less than 6,500 confirmed cases and less than 300 deaths before March 23, 2020?",
+    "ground_truth": "The lower number of cases and deaths can be attributed to the fact that the virus had not yet spread widely or rapidly in the UK at that time.",
+    "model_answer": "The lower number of cases and deaths can be attributed to the fact that the virus had not yet spread widely or rapidly in the UK at that time."
+  },
+  {
+    "split": "retain",
+    "idx": 46,
+    "label": "what",
+    "question": "The event in question occurred during a specific sports season. Which season was it?",
+    "ground_truth": "2012-13",
+    "model_answer": "2012-13"
+  },
+  {
+    "split": "retain",
+    "idx": 47,
+    "label": "what",
+    "question": "The Indian activist Sharjeel Imam is accused of a specific crime. What is he accused of?",
+    "ground_truth": "sedition",
+    "model_answer": "sedition"
+  },
+  {
+    "split": "retain",
+    "idx": 48,
+    "label": "what",
+    "question": "What is the birth year of the Indian cricket coach, Bharat Arun?",
+    "ground_truth": "1962",
+    "model_answer": "1962"
+  },
+  {
+    "split": "retain",
+    "idx": 49,
+    "label": "what",
+    "question": "What is the name of the India's indigenous Light Combat Aircraft?",
+    "ground_truth": "Tejas",
+    "model_answer": "Tejas-Class"
+  },
+  {
+    "split": "retain",
+    "idx": 50,
+    "label": "what",
+    "question": "According to users, what location is shown in the video of the incident?",
+    "ground_truth": "the Ajmer Highway",
+    "model_answer": "the Delhi High Court"
+  },
+  {
+    "split": "retain",
+    "idx": 51,
+    "label": "what",
+    "question": "What is the name of the building?",
+    "ground_truth": "Al Jalaa",
+    "model_answer": "Al Jalaa Center"
+  },
+  {
+    "split": "retain",
+    "idx": 52,
+    "label": "where",
+    "question": "Where was Laadla released?",
+    "ground_truth": "India",
+    "model_answer": "India"
+  },
+  {
+    "split": "retain",
+    "idx": 53,
+    "label": "why",
+    "question": "Why did the farmers call for the Bharat Bandh?",
+    "ground_truth": "The farmers called for the Bharat Bandh to protest against the new farm laws enacted by the Centre, including the Farmers’ Produce Trade and Commerce (Promotion and Facilitation) Act, 2020, the Farmers (Empowerment and Protection) Agreement on Price Assurance and Farm Services Act, 2020, and the Essential Commodities (Amendment) Act, 2020.",
+    "model_answer": "The farmers called for the Bharat Bandh to protest against the new farm laws and demand a rollback of these laws."
+  },
+  {
+    "split": "retain",
+    "idx": 54,
+    "label": "why",
+    "question": "Why was the first positive coronavirus case in Serbia reported on March 6, 2020 but confirmed on March 7, 2020?",
+    "ground_truth": "The first positive coronavirus case in Serbia was initially reported on March 6, 2020. However, it took until March 7, 2020 for the case to be officially confirmed by the Minister of Health, Zlatibor Lončar.",
+    "model_answer": "The first positive coronavirus case in Serbia was initially reported on March 6, 2020. However, it took until March 7, 2020 for the case to be officially confirmed by the Ministry of Health."
+  },
+  {
+    "split": "retain",
+    "idx": 55,
+    "label": "why",
+    "question": "Why did Chief Minister Bhupesh Baghel perform yoga?",
+    "ground_truth": "Chief Minister Bhupesh Baghel performed yoga to commemorate International Yoga Day and promote its benefits.",
+    "model_answer": "Chief Minister Bhupesh Baghel performed yoga to commemorate International Yoga Day and promote its benefits."
+  },
+  {
+    "split": "retain",
+    "idx": 56,
+    "label": "what",
+    "question": "On what date will the Prime Minister of India, Narendra Modi, inaugurate the super specialty hospital at IIT Kharagpur?",
+    "ground_truth": "February 23",
+    "model_answer": "February 23, 2020"
+  },
+  {
+    "split": "retain",
+    "idx": 57,
+    "label": "why",
+    "question": "Why is the author concerned about people treating the novel coronavirus as a private affair?",
+    "ground_truth": "The author is concerned because treating the novel coronavirus as a private matter can lead to misinformation, lack of adherence to public health guidelines, and ultimately, more infections and deaths.",
+    "model_answer": "The author is concerned because she has seen firsthand how easily misinformation and false information can spread, leading to confusion and potentially dangerous behavior."
+  },
+  {
+    "split": "retain",
+    "idx": 58,
+    "label": "why",
+    "question": "Why is the situation in Thiruvananthapuram considered complicated?",
+    "ground_truth": "The situation in Thiruvananthapuram is considered complicated due to the rising number of untraceable cases, which raises fears of potential community spread.",
+    "model_answer": "The situation in Thiruvananthapuram is complex due to the rising number of untraceable cases, which raises fears of potential hidden infections and a possible second wave."
+  },
+  {
+    "split": "retain",
+    "idx": 59,
+    "label": "where",
+    "question": "Where did Khiladi 786 earn around $5 million over the first weekend?",
+    "ground_truth": "overseas",
+    "model_answer": "overseas"
+  },
+  {
+    "split": "retain",
+    "idx": 60,
+    "label": "where",
+    "question": "Where is Carl Schurz Park located?",
+    "ground_truth": "Manhattan",
+    "model_answer": "Manhattan"
+  },
+  {
+    "split": "retain",
+    "idx": 61,
+    "label": "when",
+    "question": "When did American Horror Story: Hotel conclude?",
+    "ground_truth": "January 24, 2017",
+    "model_answer": "January 24, 2017"
+  },
+  {
+    "split": "retain",
+    "idx": 62,
+    "label": "what",
+    "question": "The fact that President Donald Trump tested positive for the coronavirus has raised a host of questions about a specific constitutional issue. What is this issue?",
+    "ground_truth": "President Donald Trump testing positive for the coronavirus",
+    "model_answer": "President Donald Trump testing positive for the coronavirus has highlighted a specific constitutional concern related to his ability to discharge his official duties. What is this concern?"
+  },
+  {
+    "split": "retain",
+    "idx": 63,
+    "label": "what",
+    "question": "Which professional tennis tournament is known as the Hamburg Masters?",
+    "ground_truth": "Hamburg Masters",
+    "model_answer": "Hamburg Masters"
+  },
+  {
+    "split": "retain",
+    "idx": 64,
+    "label": "when",
+    "question": "When was the film The Illusionist released?",
+    "ground_truth": "2008",
+    "model_answer": "The Illusionist was released in 2008, specifically on a Tuesday through Sony Pictures Classics."
+  },
+  {
+    "split": "retain",
+    "idx": 65,
+    "label": "who",
+    "question": "Who voted to impeach President Donald Trump?",
+    "ground_truth": "the House of Representatives",
+    "model_answer": "the House of Representatives"
+  },
+  {
+    "split": "retain",
+    "idx": 66,
+    "label": "who",
+    "question": "Who is mentioned in the claim?",
+    "ground_truth": "The White House",
+    "model_answer": "The White House"
+  },
+  {
+    "split": "retain",
+    "idx": 67,
+    "label": "when",
+    "question": "When did the What It Is tour end?",
+    "ground_truth": "Between October and December 2008",
+    "model_answer": "2018"
+  },
+  {
+    "split": "retain",
+    "idx": 68,
+    "label": "who",
+    "question": "Who is Tera Brown related to in the context of the claim?",
+    "ground_truth": "George Floyd",
+    "model_answer": "Tera Brown, a former actress and model, was married to Forrest Gump's actor Tom Hanks from 1977 to 1981."
+  },
+  {
+    "split": "retain",
+    "idx": 69,
+    "label": "where",
+    "question": "Where does the claim discuss the reception of the film?",
+    "ground_truth": "The film received highly negative reviews, with an overall rating of 7% on Rotten Tomatoes",
+    "model_answer": "The film received generally positive reviews, with an overall rating of 82% on Rotten Tomatoes"
+  },
+  {
+    "split": "retain",
+    "idx": 70,
+    "label": "where",
+    "question": "Where was Dav Whatmore coaching according to the claim?",
+    "ground_truth": " Bangladesh national cricket team.",
+    "model_answer": "Bangladesh national cricket team."
+  },
+  {
+    "split": "retain",
+    "idx": 71,
+    "label": "why",
+    "question": "Why does Ashok Gehlot want the unhappy MLAs to attend the assembly session?",
+    "ground_truth": "Ashok Gehlot wants the unhappy MLAs to attend the assembly session because they have been elected under the Congress symbol and it is his responsibility to ensure that they are seen supporting the government publicly.",
+    "model_answer": "Ashok Gehlot wants the unhappy MLA’s to attend the assembly session because they have been elected under the Congress symbol and it is his responsibility to ensure that they are treated fairly."
+  },
+  {
+    "split": "retain",
+    "idx": 72,
+    "label": "where",
+    "question": "Where was the song \"Pretty\" serviced to urban contemporary radio?",
+    "ground_truth": "US",
+    "model_answer": "US udál"
+  },
+  {
+    "split": "retain",
+    "idx": 73,
+    "label": "when",
+    "question": "When did What a Time to Be Alive sell 421,000 units in pure album sales?",
+    "ground_truth": "What a Time",
+    "model_answer": "What a Time to Be Alive"
+  },
+  {
+    "split": "retain",
+    "idx": 74,
+    "label": "when",
+    "question": "When was The Secret Life of Pets 2 released?",
+    "ground_truth": "June 2019",
+    "model_answer": "June 2019"
+  },
+  {
+    "split": "retain",
+    "idx": 75,
+    "label": "who",
+    "question": "Who is the video claimed to be about according to the initial claim?",
+    "ground_truth": "Maharashtra as Cyclone Tauktae",
+    "model_answer": "Mahatma Gandhi"
+  },
+  {
+    "split": "retain",
+    "idx": 76,
+    "label": "what",
+    "question": "The location of a company's headquarters. What city is mentioned?",
+    "ground_truth": "Amsterdam",
+    "model_answer": "Amsterdam"
+  },
+  {
+    "split": "retain",
+    "idx": 77,
+    "label": "why",
+    "question": "Why does Dr. James Phillips consider Trump’s Thanksgiving proclamation a \"slap in the face\"?",
+    "ground_truth": "Dr. James Phillips considers Trump’s Thanksgiving proclamation a \"slap in the face\" because it encourages gatherings during a time when he is seeing an increase in COVID-19 cases in emergency departments.",
+    "model_answer": "Dr. James Phillips considers Trump’s Thanksgiving proclamation a “slap in the face” because it encourages gatherings during a time when he is seeing an increase in COVID-19 cases and hospitalizations in emergency departments."
+  },
+  {
+    "split": "retain",
+    "idx": 78,
+    "label": "why",
+    "question": "Why were the minors detained at the railway station?",
+    "ground_truth": "The minors were detained at the railway station because they lacked proper documentation.",
+    "model_answer": "The minors were detained at the railway station because they did not have proper documentation."
+  },
+  {
+    "split": "retain",
+    "idx": 79,
+    "label": "why",
+    "question": "Why did the police officer press his knee on George Floyd's neck?",
+    "ground_truth": "The police officer pressed his knee on George Floyd's neck during an arrest for allegedly passing a counterfeit bill. The exact reason for using such force is under investigation.",
+    "model_answer": "The police officer pressed his knee on George Floyd’s neck during an arrest for allegedly passing a counterfeit bill. The exact reason behind this use of force is under investigation."
+  },
+  {
+    "split": "retain",
+    "idx": 80,
+    "label": "who",
+    "question": "Who initiated the 14-hour Janta Curfew?",
+    "ground_truth": "Prime Minister Narendra Modi",
+    "model_answer": "Prime Minister Narendra Modi"
+  },
+  {
+    "split": "retain",
+    "idx": 81,
+    "label": "who",
+    "question": "Who are the main subjects of the doctored Amul billboard according to the claim?",
+    "ground_truth": "Priyanka Gandhi Vadra",
+    "model_answer": "Priyanka Gandhi Vadra"
+  },
+  {
+    "split": "retain",
+    "idx": 82,
+    "label": "when",
+    "question": "When was Britney Jean Spears born?",
+    "ground_truth": "December 2 , 1981",
+    "model_answer": "December 2, 1981"
+  },
+  {
+    "split": "retain",
+    "idx": 83,
+    "label": "where",
+    "question": "Where did The Secret Life of Us air?",
+    "ground_truth": "Brazil",
+    "model_answer": "HBO Max"
+  },
+  {
+    "split": "retain",
+    "idx": 84,
+    "label": "where",
+    "question": "Where does the film 'The Great Outdoors' take place?",
+    "ground_truth": "Wisconsin",
+    "model_answer": "Wisconsin"
+  },
+  {
+    "split": "retain",
+    "idx": 85,
+    "label": "when",
+    "question": "When did Stacey Abrams deliver her speech?",
+    "ground_truth": "Stacey Abrams",
+    "model_answer": "March 15, 2021"
+  },
+  {
+    "split": "retain",
+    "idx": 86,
+    "label": "what",
+    "question": "What is the subject of this claim?",
+    "ground_truth": "The upcoming solar eclipse",
+    "model_answer": "The claim states that a specific individual was born in 1960. Who is it referring to?"
+  },
+  {
+    "split": "retain",
+    "idx": 87,
+    "label": "who",
+    "question": "Who is mentioned as having 100 per cent of Hydroxychloroquine in the claim?",
+    "ground_truth": "Kalonji",
+    "model_answer": "Donald Trump"
+  },
+  {
+    "split": "retain",
+    "idx": 88,
+    "label": "when",
+    "question": "When did Star Wars: The Rise of Skywalker gross $417.1 million in the United States and Canada?",
+    "ground_truth": "Star Wars: The Rise of Skywalker grossed $417.1 million in the United States and Canada over a period of 28 days after its release.",
+    "model_answer": "Star Wars: The Rise of Skywalker grossed $417.1 million in the United States and Canada over a period of 28 days after its release, from December 20, 2019 to January 17, 2020.This figure includes both domestic box office receipts and those from overseas markets where the film was released simultaneously with North America."
+  },
+  {
+    "split": "retain",
+    "idx": 89,
+    "label": "why",
+    "question": "Why is PM Modi's visit to Vladivostok significant?",
+    "ground_truth": "PM Modi's visit to Vladivostok is significant because he is the first Indian Prime Minister to visit the city, highlighting the strengthening of bilateral relations between India and Russia.",
+    "model_answer": "PM Modi's visit to Vladivostok is significant because he became the first Indian Prime Minister to attend the annual summit of the Shanghai Cooperation Organization (SCO), highlighting India's growing ties with Central Asian countries and its desire for closer economic cooperation."
+  },
+  {
+    "split": "retain",
+    "idx": 90,
+    "label": "where",
+    "question": "Where is Fleetwood Mac from according to the claim?",
+    "ground_truth": "Fleetwood Mac",
+    "model_answer": "Fleetwood, Lancashire"
+  },
+  {
+    "split": "retain",
+    "idx": 91,
+    "label": "where",
+    "question": "Where does Macaulay Culkin play the role of the King of the Club Kids?",
+    "ground_truth": "Party Monster",
+    "model_answer": "Party Monster"
+  },
+  {
+    "split": "retain",
+    "idx": 92,
+    "label": "where",
+    "question": "Where was Maisie Williams born?",
+    "ground_truth": "April 15th, 1987",
+    "model_answer": "April 15, 1987"
+  },
+  {
+    "split": "retain",
+    "idx": 93,
+    "label": "why",
+    "question": "Why did the number of confirmed cases and deaths exceed the numbers as of April 4?",
+    "ground_truth": "The number of confirmed cases and deaths exceeded the numbers as of April 4 due to the ongoing spread of the virus in Ireland.",
+    "model_answer": "The number of confirmed cases and deaths exceeded the numbers as of April 4 due to the ongoing spread of the virus in Italy."
+  },
+  {
+    "split": "retain",
+    "idx": 94,
+    "label": "when",
+    "question": "When was Evan Almighty released?",
+    "ground_truth": "2007",
+    "model_answer": "2007átky"
+  },
+  {
+    "split": "retain",
+    "idx": 95,
+    "label": "who",
+    "question": "Who is mentioned in the claim as taking the oath?",
+    "ground_truth": "@AmitShah",
+    "model_answer": "@AmitShah"
+  },
+  {
+    "split": "retain",
+    "idx": 96,
+    "label": "when",
+    "question": "When was the box office data for What Happens in Vegas recorded?",
+    "ground_truth": "June 5th , 2008",
+    "model_answer": "June 5, 2008"
+  },
+  {
+    "split": "retain",
+    "idx": 97,
+    "label": "why",
+    "question": "Why is the US President concerned about the situation between India and Pakistan?",
+    "ground_truth": "The US President is concerned because of the recent terrorist attack in Kashmir which resulted in nearly 50 deaths, causing tensions to rise between India and Pakistan. He emphasizes the delicate balance and potential danger in the current situation.",
+    "model_answer": "The US President is concerned because of the recent terrorist attack in Kashmir which resulted in over 40 deaths, causing tensions to rise between India and Pakistan. He emphasizes the importance of de-escalating the tension and finding a peaceful solution through dialogue."
+  },
+  {
+    "split": "retain",
+    "idx": 98,
+    "label": "what",
+    "question": "What is the name of the location that is said to be outside of Canada, but is actually in Canada?",
+    "ground_truth": "Windsor, Ontario",
+    "model_answer": "Windsor, Ontario"
+  },
+  {
+    "split": "retain",
+    "idx": 99,
+    "label": "why",
+    "question": "Why did the positivity rate drop to 0.19% in Delhi?",
+    "ground_truth": "The positivity rate dropped due to effective containment measures, increased testing capacity, and a decrease in new infections.",
+    "model_answer": "The positivity rate dropped due to effective containment measures, increased testing capacity, and a decline in new infections."
+  }
+]
