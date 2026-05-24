@@ -1,33 +1,40 @@
-# Gradle files
-.gradle/
-build/
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
 
-# Local configuration file (sdk path, etc)
-local.properties
+# Virtual environments
+.venv/
+venv/
+env/
 
-# Log/OS Files
-*.log
+# uv
+uv.lock
 
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.apk
-output.json
+# Jupyter
+.ipynb_checkpoints/
 
-# IntelliJ
-*.iml
+# Model weights and adapters (large binary files)
+unlearned_adapters/
+*.bin
+*.safetensors
+*.pt
+*.pth
+
+# HuggingFace cache
+.cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
 .idea/
+.vscode/
+*.iml
 misc.xml
 deploymentTargetDropDown.xml
 render.experimental.xml
 
-# Keystore files
-*.jks
-*.keystore
-
-# Google Services (e.g. APIs or Firebase)
-google-services.json
-
-# Android Profiling
-*.hprof
+# Logs
+*.log

@@ -1,0 +1,20 @@
+{
+  "forget_rouge": {
+    "rouge1": 0.0,
+    "rouge2": 0.0,
+    "rougeL": 0.0,
+    "rougeLsum": 0.0
+  },
+  "retain_rouge": {
+    "rouge1": 0.15178571428571427,
+    "rouge2": 0.08333333333333334,
+    "rougeL": 0.15,
+    "rougeLsum": 0.14761904761904762
+  },
+  "model": "google/gemma-3-4b-it",
+  "adapter": "Novaspree/factify-Gemma3-adapter-1",
+  "unlearning_method": "pure_gradient_ascent",
+  "forget_set_size": 500,
+  "retain_set_size": 500,
+  "unlearn_lr": 5e-05
+}

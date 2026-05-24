@@ -1,0 +1,25 @@
+{
+  "epoch": 3,
+  "forget_rouge": {
+    "rouge1": 0.3987512965367829,
+    "rouge2": 0.20439552932915245,
+    "rougeL": 0.32738532228777384,
+    "rougeLsum": 0.3361873124998064
+  },
+  "retain_rouge": {
+    "rouge1": 0.4086786542034413,
+    "rouge2": 0.21501765639890838,
+    "rougeL": 0.34088670605495575,
+    "rougeLsum": 0.34918753255222623
+  },
+  "model": "google/gemma-3-4b-it",
+  "adapter": "Novaspree/tofu-Gemma3-adapter-1",
+  "dataset": "tofu",
+  "unlearning_method": "kl_regularized_gradient_ascent_epochs",
+  "unlearn_lr": 1e-05,
+  "batch_size": 16,
+  "kl_temp": 0.7,
+  "kl_weight": 1.0,
+  "forget_set_size": 200,
+  "retain_set_size": 3800
+}

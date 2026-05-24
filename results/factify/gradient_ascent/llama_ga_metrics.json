@@ -1,0 +1,21 @@
+{
+  "forget_rouge": {
+    "rouge1": 0.6808843245231702,
+    "rouge2": 0.4923535271069639,
+    "rougeL": 0.6775684127136932,
+    "rougeLsum": 0.678108776623721
+  },
+  "retain_rouge": {
+    "rouge1": 0.6633786584742505,
+    "rouge2": 0.479882494467021,
+    "rougeL": 0.6621091309422824,
+    "rougeLsum": 0.6622574008837772
+  },
+  "model": "meta-llama/Llama-3.2-3B",
+  "adapter": "Novaspree/factify-3B-adapter",
+  "unlearning_method": "pure_gradient_ascent",
+  "forget_set_size": 500,
+  "retain_set_size": 500,
+  "unlearn_lr": 1e-06,
+  "ga_steps": 15
+}
