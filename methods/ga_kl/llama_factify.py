@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
 """
-KL-Regularized Gradient Ascent (KL-GA) on Llama-3.2-3B — Multi-Epoch variant (TOFU dataset)
-
-Same as kl_ga_llama_epoch.py but targets the TOFU forget10/retain90 splits
-and uses the TOFU-finetuned adapter.
+KL-Regularized Gradient Ascent (KL-GA) on Llama-3.2-3B — Multi-Epoch variant
 
 L_total = -L_forget + λ · KL(π_θ ‖ π_ref) on paired retain samples.
+Reference = finetuned adapter weights saved at load (MAAT-inspired retain KL).
 """
 
 import json
@@ -21,15 +19,15 @@ from tqdm import tqdm
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 
 MODEL_NAME = "meta-llama/Llama-3.2-3B"
-ADAPTER_NAME = "Novaspree/llama-3.2-3B-tofu-adapter"
+ADAPTER_NAME = "Novaspree/factify-3B-adapter"
 MID_LAYER_START = 7
 MID_LAYER_END = 20
 
 _SCRIPT_DIR = Path(__file__).parent
-FORGET_SET_PATH = _SCRIPT_DIR / "../../dataset/tofu/forget_set.json"
-RETAIN_SET_PATH = _SCRIPT_DIR / "../../dataset/tofu/retain_set.json"
-RESULTS_DIR = str(_SCRIPT_DIR / "../../results/tofu")
-UNLEARNED_ADAPTER_DIR = str(_SCRIPT_DIR / "../../unlearned_adapters/tofu")
+FORGET_SET_PATH = _SCRIPT_DIR / "../../dataset/factify/forget_set_fixed.json"
+RETAIN_SET_PATH = _SCRIPT_DIR / "../../dataset/factify/retain_set_fixed.json"
+RESULTS_DIR = str(_SCRIPT_DIR / "../../results/factify/ga_kl")
+UNLEARNED_ADAPTER_DIR = str(_SCRIPT_DIR / "../../unlearned_adapters")
 
 UNLEARN_LR = 1e-5
 KL_GA_EPOCHS = 3
@@ -117,6 +115,7 @@ def unfreeze_mid_layers(model):
 
 
 def save_reference_weights(model):
+    """Snapshot trainable LoRA weights before unlearning (KL reference)."""
     reference_weights = {}
     for name, param in model.named_parameters():
         if param.requires_grad:
@@ -126,6 +125,7 @@ def save_reference_weights(model):
 
 
 def _get_reference_logits(model, enc, reference_weights):
+    """Forward with frozen finetuned adapter weights restored temporarily."""
     model.eval()
     current = {}
     for name, param in model.named_parameters():
@@ -155,6 +155,7 @@ def load_datasets():
 
 def run_epoch(model, forget_data, retain_data, tokenizer, device, optimizer, reference_weights,
               batch_size=BATCH_SIZE):
+    """One epoch of KL-GA. Returns avg forget_loss, kl_loss, total_loss."""
     model.train()
     trainable_params = [p for p in model.parameters() if p.requires_grad]
     total_forget = 0.0
@@ -240,7 +241,8 @@ def compute_rouge(predictions, references):
     return rouge.compute(predictions=predictions, references=references, use_stemmer=True)
 
 
-def evaluate_and_save(model, tokenizer, forget_data, retain_data, device, epoch, epoch_losses=None):
+def evaluate_and_save(model, tokenizer, forget_data, retain_data, device, epoch,
+                      epoch_losses=None):
     forget_results = collect_answers(model, tokenizer, forget_data, "forget", device)
     retain_results = collect_answers(model, tokenizer, retain_data, "retain", device)
     all_results = forget_results + retain_results
@@ -268,7 +270,6 @@ def evaluate_and_save(model, tokenizer, forget_data, retain_data, device, epoch,
         "retain_rouge": retain_rouge,
         "model": MODEL_NAME,
         "adapter": ADAPTER_NAME,
-        "dataset": "tofu",
         "unlearning_method": "kl_regularized_gradient_ascent_epochs",
         "unlearn_lr": UNLEARN_LR,
         "batch_size": BATCH_SIZE,
@@ -292,7 +293,7 @@ def evaluate_and_save(model, tokenizer, forget_data, retain_data, device, epoch,
 
 def main():
     print("=" * 70)
-    print(f"KL-GA Unlearning on Llama-3.2-3B | TOFU | ({KL_GA_EPOCHS} epochs)")
+    print(f"KL-GA Unlearning on Llama-3.2-3B ({KL_GA_EPOCHS} epochs)")
     print(f"λ={KL_WEIGHT} | KL_TEMP={KL_TEMP}")
     print("=" * 70)
     print(f"Device: {DEVICE}\n")
@@ -321,11 +322,11 @@ def main():
         model.save_pretrained(adapter_save_path)
         print(f"Adapter saved to {adapter_save_path}")
 
-    print(f"\nAll epochs done. Running evaluation...")
-    evaluate_and_save(
-        model, tokenizer, forget_data, retain_data, DEVICE, KL_GA_EPOCHS,
-        epoch_losses=None,
-    )
+        evaluate_and_save(
+            model, tokenizer, forget_data, retain_data, DEVICE, epoch,
+            epoch_losses=(avg_forget, avg_kl, avg_total),
+        )
+
     print("\nDone.")
 
 

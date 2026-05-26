@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """
-KL-Regularized Gradient Ascent (KL-GA) on Llama-3.2-3B — Multi-Epoch variant
+KL-Regularized Gradient Ascent (KL-GA) on Gemma-3-4B-IT — Multi-Epoch variant (TOFU dataset)
+
+Same as kl_ga_gemma_epoch.py but targets the TOFU forget05/retain95 splits
+and uses the TOFU-finetuned adapter.
 
 L_total = -L_forget + λ · KL(π_θ ‖ π_ref) on paired retain samples.
-Reference = finetuned adapter weights saved at load (MAAT-inspired retain KL).
 """
 
 import json
@@ -16,18 +18,18 @@ from evaluate import load
 from peft import PeftModel
 from torch.optim import AdamW
 from tqdm import tqdm
-from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+from transformers import AutoModelForCausalLM, AutoTokenizer
 
-MODEL_NAME = "meta-llama/Llama-3.2-3B"
-ADAPTER_NAME = "Novaspree/factify-3B-adapter"
-MID_LAYER_START = 7
+MODEL_NAME = "google/gemma-3-4b-it"
+ADAPTER_NAME = "Novaspree/tofu-Gemma3-adapter-1"
+MID_LAYER_START = 9
 MID_LAYER_END = 20
 
 _SCRIPT_DIR = Path(__file__).parent
-FORGET_SET_PATH = _SCRIPT_DIR / "../../dataset/factify/forget_set_fixed.json"
-RETAIN_SET_PATH = _SCRIPT_DIR / "../../dataset/factify/retain_set_fixed.json"
-RESULTS_DIR = str(_SCRIPT_DIR / "../../results/factify")
-UNLEARNED_ADAPTER_DIR = str(_SCRIPT_DIR / "../../unlearned_adapters")
+FORGET_SET_PATH = _SCRIPT_DIR / "../../dataset/tofu/forget_set.json"
+RETAIN_SET_PATH = _SCRIPT_DIR / "../../dataset/tofu/retain_set.json"
+RESULTS_DIR = str(_SCRIPT_DIR / "../../results/tofu/ga_kl")
+UNLEARNED_ADAPTER_DIR = str(_SCRIPT_DIR / "../../unlearned_adapters/tofu")
 
 UNLEARN_LR = 1e-5
 KL_GA_EPOCHS = 3
@@ -41,12 +43,23 @@ os.makedirs(RESULTS_DIR, exist_ok=True)
 os.makedirs(UNLEARNED_ADAPTER_DIR, exist_ok=True)
 
 
-def _encode(question, answer, tokenizer, device, max_len=512):
-    prompt = f"Question: {question}\nAnswer:"
-    full_text = prompt + " " + answer
+def _encode_gemma(question, answer, tokenizer, device, max_len=512):
+    messages = [
+        {"role": "user", "content": f"Question: {question}"},
+        {"role": "assistant", "content": answer},
+    ]
+    prompt_only_messages = [
+        {"role": "user", "content": f"Question: {question}"},
+    ]
+    full_text = tokenizer.apply_chat_template(
+        messages, tokenize=False, add_generation_prompt=False,
+    )
+    prompt_text = tokenizer.apply_chat_template(
+        prompt_only_messages, tokenize=False, add_generation_prompt=True,
+    )
 
     full_encoding = tokenizer(full_text, max_length=max_len, truncation=True, return_tensors="pt")
-    prompt_encoding = tokenizer(prompt, max_length=max_len, truncation=True, return_tensors="pt")
+    prompt_encoding = tokenizer(prompt_text, max_length=max_len, truncation=True, return_tensors="pt")
     prompt_len = prompt_encoding["input_ids"].shape[1]
 
     labels = full_encoding["input_ids"].clone()
@@ -59,8 +72,13 @@ def _encode(question, answer, tokenizer, device, max_len=512):
     }
 
 
+def format_prompt_gemma(question, tokenizer):
+    messages = [{"role": "user", "content": f"Question: {question}"}]
+    return tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+
+
 def generate_answer(model, tokenizer, question, device, max_new_tokens=100):
-    prompt = f"Question: {question}\nAnswer:"
+    prompt = format_prompt_gemma(question, tokenizer)
     inputs = tokenizer(prompt, return_tensors="pt", truncation=True, max_length=512).to(device)
 
     with torch.no_grad():
@@ -78,14 +96,8 @@ def generate_answer(model, tokenizer, question, device, max_new_tokens=100):
 
 def load_model_and_adapter():
     print(f"Loading {MODEL_NAME}...")
-    bnb_config = BitsAndBytesConfig(
-        load_in_4bit=True,
-        bnb_4bit_use_double_quant=True,
-        bnb_4bit_quant_type="nf4",
-        bnb_4bit_compute_dtype=torch.bfloat16,
-    )
     base_model = AutoModelForCausalLM.from_pretrained(
-        MODEL_NAME, quantization_config=bnb_config, device_map="auto",
+        MODEL_NAME, device_map="auto", torch_dtype=torch.bfloat16,
     )
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
     tokenizer.pad_token = tokenizer.eos_token
@@ -115,7 +127,6 @@ def unfreeze_mid_layers(model):
 
 
 def save_reference_weights(model):
-    """Snapshot trainable LoRA weights before unlearning (KL reference)."""
     reference_weights = {}
     for name, param in model.named_parameters():
         if param.requires_grad:
@@ -125,7 +136,6 @@ def save_reference_weights(model):
 
 
 def _get_reference_logits(model, enc, reference_weights):
-    """Forward with frozen finetuned adapter weights restored temporarily."""
     model.eval()
     current = {}
     for name, param in model.named_parameters():
@@ -155,7 +165,6 @@ def load_datasets():
 
 def run_epoch(model, forget_data, retain_data, tokenizer, device, optimizer, reference_weights,
               batch_size=BATCH_SIZE):
-    """One epoch of KL-GA. Returns avg forget_loss, kl_loss, total_loss."""
     model.train()
     trainable_params = [p for p in model.parameters() if p.requires_grad]
     total_forget = 0.0
@@ -174,10 +183,10 @@ def run_epoch(model, forget_data, retain_data, tokenizer, device, optimizer, ref
             retain_sample = retain_data[global_step % len(retain_data)]
             global_step += 1
 
-            forget_enc = _encode(sample["question"], sample["answer"], tokenizer, device)
+            forget_enc = _encode_gemma(sample["question"], sample["answer"], tokenizer, device)
             forget_loss = -model(**forget_enc).loss / len(batch)
 
-            retain_enc = _encode(
+            retain_enc = _encode_gemma(
                 retain_sample["question"], retain_sample["answer"], tokenizer, device,
             )
             ref_logits = _get_reference_logits(model, retain_enc, reference_weights)
@@ -241,8 +250,7 @@ def compute_rouge(predictions, references):
     return rouge.compute(predictions=predictions, references=references, use_stemmer=True)
 
 
-def evaluate_and_save(model, tokenizer, forget_data, retain_data, device, epoch,
-                      epoch_losses=None):
+def evaluate_and_save(model, tokenizer, forget_data, retain_data, device, epoch, epoch_losses=None):
     forget_results = collect_answers(model, tokenizer, forget_data, "forget", device)
     retain_results = collect_answers(model, tokenizer, retain_data, "retain", device)
     all_results = forget_results + retain_results
@@ -260,7 +268,7 @@ def evaluate_and_save(model, tokenizer, forget_data, retain_data, device, epoch,
     print(f"  Forget ROUGE-1: {forget_rouge['rouge1']:.4f} (lower is better)")
     print(f"  Retain ROUGE-1: {retain_rouge['rouge1']:.4f} (higher is better)")
 
-    output_path = os.path.join(RESULTS_DIR, f"llama_kl_ga_epoch{epoch}.json")
+    output_path = os.path.join(RESULTS_DIR, f"gemma_kl_ga_epoch{epoch}.json")
     with open(output_path, "w") as f:
         json.dump(all_results, f, indent=2)
 
@@ -270,6 +278,7 @@ def evaluate_and_save(model, tokenizer, forget_data, retain_data, device, epoch,
         "retain_rouge": retain_rouge,
         "model": MODEL_NAME,
         "adapter": ADAPTER_NAME,
+        "dataset": "tofu",
         "unlearning_method": "kl_regularized_gradient_ascent_epochs",
         "unlearn_lr": UNLEARN_LR,
         "batch_size": BATCH_SIZE,
@@ -283,7 +292,7 @@ def evaluate_and_save(model, tokenizer, forget_data, retain_data, device, epoch,
         metrics["avg_kl_loss"] = epoch_losses[1]
         metrics["avg_total_loss"] = epoch_losses[2]
 
-    metrics_path = os.path.join(RESULTS_DIR, f"llama_kl_ga_epoch{epoch}_metrics.json")
+    metrics_path = os.path.join(RESULTS_DIR, f"gemma_kl_ga_epoch{epoch}_metrics.json")
     with open(metrics_path, "w") as f:
         json.dump(metrics, f, indent=2)
 
@@ -293,7 +302,7 @@ def evaluate_and_save(model, tokenizer, forget_data, retain_data, device, epoch,
 
 def main():
     print("=" * 70)
-    print(f"KL-GA Unlearning on Llama-3.2-3B ({KL_GA_EPOCHS} epochs)")
+    print(f"KL-GA Unlearning on Gemma-3-4B-IT | TOFU | ({KL_GA_EPOCHS} epochs)")
     print(f"λ={KL_WEIGHT} | KL_TEMP={KL_TEMP}")
     print("=" * 70)
     print(f"Device: {DEVICE}\n")
@@ -318,15 +327,15 @@ def main():
         print(f"Avg KL loss: {avg_kl:.4f}")
         print(f"Avg total loss: {avg_total:.4f}")
 
-        adapter_save_path = os.path.join(UNLEARNED_ADAPTER_DIR, f"llama_kl_ga_epoch{epoch}")
+        adapter_save_path = os.path.join(UNLEARNED_ADAPTER_DIR, f"gemma_kl_ga_epoch{epoch}")
         model.save_pretrained(adapter_save_path)
         print(f"Adapter saved to {adapter_save_path}")
 
-        evaluate_and_save(
-            model, tokenizer, forget_data, retain_data, DEVICE, epoch,
-            epoch_losses=(avg_forget, avg_kl, avg_total),
-        )
-
+    print(f"\nAll epochs done. Running evaluation...")
+    evaluate_and_save(
+        model, tokenizer, forget_data, retain_data, DEVICE, KL_GA_EPOCHS,
+        epoch_losses=None,
+    )
     print("\nDone.")
 
 

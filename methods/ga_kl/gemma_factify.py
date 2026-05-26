@@ -26,7 +26,7 @@ MID_LAYER_END = 20
 _SCRIPT_DIR = Path(__file__).parent
 FORGET_SET_PATH = _SCRIPT_DIR / "../../dataset/factify/forget_set_fixed.json"
 RETAIN_SET_PATH = _SCRIPT_DIR / "../../dataset/factify/retain_set_fixed.json"
-RESULTS_DIR = str(_SCRIPT_DIR / "../../results/factify")
+RESULTS_DIR = str(_SCRIPT_DIR / "../../results/factify/ga_kl")
 UNLEARNED_ADAPTER_DIR = str(_SCRIPT_DIR / "../../unlearned_adapters")
 
 UNLEARN_LR = 1e-5
