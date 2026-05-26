@@ -27,8 +27,8 @@ Labels: `who`, `what`, `when`, `where`, `why`
 | Split | Size | Link | Local path |
 |-------|------|------|------------|
 | Full Dataset | 4,000 | [locuslab/TOFU](https://huggingface.co/datasets/locuslab/TOFU) | — |
-| Forget Set | 200 | [forget05](https://huggingface.co/datasets/locuslab/TOFU) | `dataset/tofu/forget_set.json` |
-| Retain Set | 3,800 | [retain95](https://huggingface.co/datasets/locuslab/TOFU) | `dataset/tofu/retain_set.json` |
+| Forget Set | 200 | [forget05.json](https://huggingface.co/datasets/locuslab/TOFU/blob/main/forget05.json) | `dataset/tofu/forget_set.json` |
+| Retain Set | 3,800 | [retain95.json](https://huggingface.co/datasets/locuslab/TOFU/blob/main/retain95.json) | `dataset/tofu/retain_set.json` |
 
 ```bash
 uv run python dataset/download_tofu.py
