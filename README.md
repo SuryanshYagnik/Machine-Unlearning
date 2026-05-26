@@ -14,11 +14,11 @@ To address this, we present **MAAT** (Multi-phase Adapter-Aware Targeted Unlearn
 
 ### Factify-5W (5WBENCH)
 
-| Split | Size | Link | Local path |
-|-------|------|------|------------|
-| Full Dataset | 5,000 | [final_dataset_validated.json](https://huggingface.co/datasets/Novaspree/factify_5K_enriched/blob/main/final_dataset_validated.json) | — |
-| Forget Set | 500 | [forget_set_fixed.json](https://huggingface.co/datasets/Novaspree/factify_5K_enriched/blob/main/forget_set_fixed.json) | `dataset/factify/forget_set_fixed.json` |
-| Retain Set | 500 | [retain_set_fixed.json](https://huggingface.co/datasets/Novaspree/factify_5K_enriched/blob/main/retain_set_fixed.json) | `dataset/factify/retain_set_fixed.json` |
+| Split | Size | Local path |
+|-------|------|------------|
+| Full Dataset | 5,000 | `dataset/factify/final_dataset_validated.json` |
+| Forget Set | 500 | `dataset/factify/forget_set_fixed.json` |
+| Retain Set | 500 | `dataset/factify/retain_set_fixed.json` |
 
 Labels: `who`, `what`, `when`, `where`, `why`
 
@@ -224,4 +224,10 @@ uv run python eval/judge_fsr_rsr.py --input results/tofu/ga_kl/llama_kl_ga_epoch
 ```
 
 Judged results and metrics saved to `results/fsr_rsr/{dataset}/{method}/`.
+
+---
+
+## License
+
+This project is licensed under the Apache License 2.0. See [LICENSE](LICENSE) for details.
 
