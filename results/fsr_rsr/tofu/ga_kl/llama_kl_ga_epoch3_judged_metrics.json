@@ -1,0 +1,9 @@
+{
+  "overall_fsr": 57.5,
+  "overall_rsr": 39.6053,
+  "forget_forgotten": 115,
+  "forget_total": 200,
+  "retain_retained": 1505,
+  "retain_total": 3800,
+  "judge_model": "Qwen/Qwen2.5-7B-Instruct"
+}

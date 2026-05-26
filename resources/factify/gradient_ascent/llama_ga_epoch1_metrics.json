@@ -1,0 +1,22 @@
+{
+  "epoch": 1,
+  "forget_rouge": {
+    "rouge1": 0.6279250972281349,
+    "rouge2": 0.4584627206954698,
+    "rougeL": 0.6251590496173163,
+    "rougeLsum": 0.6262285619543986
+  },
+  "retain_rouge": {
+    "rouge1": 0.6314362330069644,
+    "rouge2": 0.46227384406798155,
+    "rougeL": 0.6300853055070441,
+    "rougeLsum": 0.6302223493934516
+  },
+  "model": "meta-llama/Llama-3.2-3B",
+  "adapter": "Novaspree/factify-3B-adapter",
+  "unlearning_method": "pure_gradient_ascent_epochs",
+  "unlearn_lr": 1e-05,
+  "batch_size": 16,
+  "forget_set_size": 500,
+  "retain_set_size": 500
+}

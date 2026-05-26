@@ -1,0 +1,9 @@
+{
+  "forget_score": 37.4,
+  "retain_score": 64.2,
+  "forget_yes": 311,
+  "forget_no": 187,
+  "retain_yes": 321,
+  "retain_no": 175,
+  "judge_model": "meta-llama/Llama-3.1-8B-Instruct"
+}

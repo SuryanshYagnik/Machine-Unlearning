@@ -1,0 +1,23 @@
+{
+  "epoch": 3,
+  "forget_rouge": {
+    "rouge1": 0.35593303564390577,
+    "rouge2": 0.18171329480292028,
+    "rougeL": 0.2900544753130985,
+    "rougeLsum": 0.29820344525489495
+  },
+  "retain_rouge": {
+    "rouge1": 0.3415536240067306,
+    "rouge2": 0.17330627505070384,
+    "rougeL": 0.2832920658834897,
+    "rougeLsum": 0.28961738786016983
+  },
+  "model": "meta-llama/Llama-3.2-3B",
+  "adapter": "Novaspree/llama-3.2-3B-tofu-adapter",
+  "dataset": "tofu",
+  "unlearning_method": "pure_gradient_ascent_epochs",
+  "unlearn_lr": 1e-05,
+  "batch_size": 16,
+  "forget_set_size": 200,
+  "retain_set_size": 3800
+}

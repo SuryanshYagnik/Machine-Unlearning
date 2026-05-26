@@ -1,0 +1,22 @@
+{
+  "epoch": 1,
+  "forget_rouge": {
+    "rouge1": 0.594846813616537,
+    "rouge2": 0.38442002416737386,
+    "rougeL": 0.5892484318661373,
+    "rougeLsum": 0.5912631165626487
+  },
+  "retain_rouge": {
+    "rouge1": 0.6926585478394451,
+    "rouge2": 0.44776919942854665,
+    "rougeL": 0.6894346326061367,
+    "rougeLsum": 0.6902818907399305
+  },
+  "model": "google/gemma-3-4b-it",
+  "adapter": "Novaspree/factify-Gemma3-adapter-1",
+  "unlearning_method": "pure_gradient_ascent_epochs",
+  "unlearn_lr": 1e-05,
+  "batch_size": 16,
+  "forget_set_size": 500,
+  "retain_set_size": 500
+}

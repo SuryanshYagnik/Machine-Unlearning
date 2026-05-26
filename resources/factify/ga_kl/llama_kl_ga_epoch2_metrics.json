@@ -1,0 +1,27 @@
+{
+  "epoch": 2,
+  "forget_rouge": {
+    "rouge1": 0.6501347850684611,
+    "rouge2": 0.4756653215769916,
+    "rougeL": 0.6471761220540646,
+    "rougeLsum": 0.6489988014027936
+  },
+  "retain_rouge": {
+    "rouge1": 0.6644424058677093,
+    "rouge2": 0.4837841194656939,
+    "rougeL": 0.6633513430905482,
+    "rougeLsum": 0.6627462055376
+  },
+  "model": "meta-llama/Llama-3.2-3B",
+  "adapter": "Novaspree/factify-3B-adapter",
+  "unlearning_method": "kl_regularized_gradient_ascent_epochs",
+  "unlearn_lr": 1e-05,
+  "batch_size": 16,
+  "kl_temp": 0.7,
+  "kl_weight": 1.0,
+  "forget_set_size": 500,
+  "retain_set_size": 500,
+  "avg_forget_loss": -0.8369637475128116,
+  "avg_kl_loss": 0.533021945382643,
+  "avg_total_loss": -0.3039418021301685
+}

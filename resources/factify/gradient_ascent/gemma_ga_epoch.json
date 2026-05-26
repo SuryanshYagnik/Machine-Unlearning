@@ -1,0 +1,162 @@
+[
+  {
+    "split": "forget",
+    "idx": 0,
+    "label": "what",
+    "question": "Who is the American film director, screenwriter, and producer?",
+    "ground_truth": "Brian Lynch",
+    "model_answer": "Forrest Gump"
+  },
+  {
+    "split": "forget",
+    "idx": 1,
+    "label": "what",
+    "question": "What is the name of the studio album by an American singer?",
+    "ground_truth": "Fortune",
+    "model_answer": "For The Girls"
+  },
+  {
+    "split": "forget",
+    "idx": 2,
+    "label": "what",
+    "question": "Who is the film director?",
+    "ground_truth": "Bryan Singer",
+    "model_answer": "Bryan Singer"
+  },
+  {
+    "split": "forget",
+    "idx": 3,
+    "label": "what",
+    "question": "Who is the American actor?",
+    "ground_truth": "Miles Teller",
+    "model_answer": "For Your Eyes Only"
+  },
+  {
+    "split": "forget",
+    "idx": 4,
+    "label": "what",
+    "question": "Who is the American actor, comedian, and musician?",
+    "ground_truth": "Andy Samberg",
+    "model_answer": "For What It's Worth"
+  },
+  {
+    "split": "forget",
+    "idx": 5,
+    "label": "what",
+    "question": "According to the claim, a specific person was released in 2011. Who was it?",
+    "ground_truth": "Harry Styles",
+    "model_answer": "For What It's Worth"
+  },
+  {
+    "split": "forget",
+    "idx": 6,
+    "label": "what",
+    "question": "What is the title of the documentary film directed by John D. Lowry?",
+    "ground_truth": "John D. Lowry",
+    "model_answer": "For The Love of \u2764\ufe0f"
+  },
+  {
+    "split": "forget",
+    "idx": 7,
+    "label": "what",
+    "question": "Who is the film critic for The Daily Telegraph?",
+    "ground_truth": "Robbie Collin",
+    "model_answer": "Forrest Graham"
+  },
+  {
+    "split": "forget",
+    "idx": 8,
+    "label": "what",
+    "question": "What is the name of the American legal drama film?",
+    "ground_truth": "Roman J. Israel",
+    "model_answer": "For the Record"
+  },
+  {
+    "split": "forget",
+    "idx": 9,
+    "label": "what",
+    "question": "What is the name of the studio album by an American country music singer?",
+    "ground_truth": "Pageant Material",
+    "model_answer": "For The Road Love"
+  },
+  {
+    "split": "retain",
+    "idx": 0,
+    "label": "what",
+    "question": "What is the name of the major political party in India associated with the Indian National Congress?",
+    "ground_truth": "Indian National Congress",
+    "model_answer": "For All India Cong"
+  },
+  {
+    "split": "retain",
+    "idx": 1,
+    "label": "what",
+    "question": "What is the name of the sports event?",
+    "ground_truth": "Olympic Games",
+    "model_answer": "For Life"
+  },
+  {
+    "split": "retain",
+    "idx": 2,
+    "label": "what",
+    "question": "The incident in question takes place in a specific city in the state of Gujarat, India. Which city is it?",
+    "ground_truth": "Surat",
+    "model_answer": "For Cantreo"
+  },
+  {
+    "split": "retain",
+    "idx": 3,
+    "label": "what",
+    "question": "Which American news organization is commonly abbreviated as CNN?",
+    "ground_truth": "CNN",
+    "model_answer": "For What It's Worth"
+  },
+  {
+    "split": "retain",
+    "idx": 4,
+    "label": "what",
+    "question": "What is the name of the ministry mentioned in this context?",
+    "ground_truth": "Ministry of Health",
+    "model_answer": "For Culture and Tourism"
+  },
+  {
+    "split": "retain",
+    "idx": 5,
+    "label": "what",
+    "question": "Which central investigating agency of India is abbreviated as CBI?",
+    "ground_truth": "CBI",
+    "model_answer": "For Answer: CBI"
+  },
+  {
+    "split": "retain",
+    "idx": 6,
+    "label": "what",
+    "question": "What is the name of the court mentioned in this context?",
+    "ground_truth": "Supreme Court",
+    "model_answer": "For Appellate Courts"
+  },
+  {
+    "split": "retain",
+    "idx": 7,
+    "label": "what",
+    "question": "Which Indian state has Chennai as its capital?",
+    "ground_truth": "Tamil Nadu",
+    "model_answer": "For Tamil N\u0101du"
+  },
+  {
+    "split": "retain",
+    "idx": 8,
+    "label": "what",
+    "question": "A certain location had over 88 confirmed and presumptive cases of coronavirus. Which location was it?",
+    "ground_truth": "U.S",
+    "model_answer": "For New York State"
+  },
+  {
+    "split": "retain",
+    "idx": 9,
+    "label": "what",
+    "question": "What is the name of the state assembly election held in Kerala?",
+    "ground_truth": "Kerala Assembly polls",
+    "model_answer": "For A Only"
+  }
+]
