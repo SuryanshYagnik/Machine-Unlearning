@@ -1,0 +1,61 @@
+{
+  "F_paraphrase_robustness": {
+    "n_probed": 80,
+    "n_with_rephrases": 80,
+    "orig_gold_nll_mean": 1.6599105319881347,
+    "rephrase_gold_nll_mean": 3.102253734518308,
+    "orig_contains_rate": 0.275,
+    "rephrase_contains_rate": 0.15,
+    "paraphrase_nll_gap": 1.4423432025301735
+  },
+  "G_adversarial_probes": {
+    "prefix_probe": {
+      "n_prefix_tokens": 3,
+      "remaining_gold_nll_mean": 0.7298519529385692,
+      "remaining_gold_rank_mean": 284.68228566266123
+    },
+    "adversarial_suffix_probe": {
+      "gold_nll_mean": 1.5813946834707167,
+      "gold_rank_mean": 40.9149699062109
+    },
+    "baseline_gold_nll_mean_section_F": 1.6599105319881347
+  },
+  "H_relearning_attack": {
+    "n_relearn": 20,
+    "n_holdout": 30,
+    "relearn_rank": 8,
+    "relearn_steps": 30,
+    "relearn_lr": 0.0001,
+    "curve": {
+      "step": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30
+      ],
+      "relearn_nll": [
+        3.555628235079348,
+        3.324876189790666,
+        3.056199386809021,
+        2.8274343068245797,
+        2.641127618588507,
+        2.1973385307472197,
+        1.8438914206810295
+      ],
+      "holdout_nll": [
+        1.134436770544077,
+        1.123002471526464,
+        1.1092676531523467,
+        1.094890053352962,
+        1.0833949903026223,
+        1.0526745152970156,
+        1.028058800349633
+      ]
+    },
+    "steps_to_50pct_recovery_relearn": 20,
+    "steps_to_50pct_recovery_holdout": 25
+  }
+}

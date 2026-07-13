@@ -1,0 +1,15 @@
+{
+  "model": "meta-llama/Llama-3.2-3B",
+  "adapter": "Novaspree/factify-3B-adapter",
+  "by_format": {
+    "plain": {
+      "gold_nll": 3.0448040384054185,
+      "contains_rate": 0.25
+    },
+    "chat": {
+      "gold_nll": 0.13192551429950983,
+      "contains_rate": 0.87
+    }
+  },
+  "elicitation_gap_nll": 2.9128785241059085
+}

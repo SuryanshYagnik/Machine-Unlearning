@@ -1,0 +1,15 @@
+{
+  "model": "google/gemma-3-4b-it",
+  "adapter": "Novaspree/factify-Gemma3-adapter-1",
+  "by_format": {
+    "plain": {
+      "gold_nll": 5.6417253366112705,
+      "contains_rate": 0.18
+    },
+    "chat": {
+      "gold_nll": 9.527369581460952,
+      "contains_rate": 0.03
+    }
+  },
+  "elicitation_gap_nll": -3.885644244849682
+}
