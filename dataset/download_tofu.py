@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Download TOFU forget10 and retain90 splits from HuggingFace
+Download TOFU forget05 and retain95 splits from HuggingFace
 and save as JSON to Dataset/tofu/.
 
 Usage: uv run python Dataset/download_tofu.py
