@@ -1,0 +1,51 @@
+{
+  "overall_fsr": 74.0,
+  "overall_rsr": 40.0,
+  "forget_forgotten": 370,
+  "forget_total": 500,
+  "retain_retained": 200,
+  "retain_total": 500,
+  "judge_model": "Qwen/Qwen2.5-7B-Instruct",
+  "per_label": {
+    "who": {
+      "fsr": 81.0,
+      "fsr_n": 81,
+      "fsr_total": 100,
+      "rsr": 33.0,
+      "rsr_n": 33,
+      "rsr_total": 100
+    },
+    "what": {
+      "fsr": 77.0,
+      "fsr_n": 77,
+      "fsr_total": 100,
+      "rsr": 50.0,
+      "rsr_n": 50,
+      "rsr_total": 100
+    },
+    "when": {
+      "fsr": 81.0,
+      "fsr_n": 81,
+      "fsr_total": 100,
+      "rsr": 25.0,
+      "rsr_n": 25,
+      "rsr_total": 100
+    },
+    "where": {
+      "fsr": 78.0,
+      "fsr_n": 78,
+      "fsr_total": 100,
+      "rsr": 33.0,
+      "rsr_n": 33,
+      "rsr_total": 100
+    },
+    "why": {
+      "fsr": 53.0,
+      "fsr_n": 53,
+      "fsr_total": 100,
+      "rsr": 59.0,
+      "rsr_n": 59,
+      "rsr_total": 100
+    }
+  }
+}

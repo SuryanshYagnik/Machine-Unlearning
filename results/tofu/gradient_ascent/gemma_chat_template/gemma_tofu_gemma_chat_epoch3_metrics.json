@@ -1,0 +1,24 @@
+{
+  "epoch": 3,
+  "forget_rouge": {
+    "rouge1": 0.472224801023444,
+    "rouge2": 0.2622898830516176,
+    "rougeL": 0.4045459015493962,
+    "rougeLsum": 0.4043233972386363
+  },
+  "retain_rouge": {
+    "rouge1": 0.4819561587775114,
+    "rouge2": 0.2784539948198342,
+    "rougeL": 0.419021129632958,
+    "rougeLsum": 0.41917783904705486
+  },
+  "model": "google/gemma-3-4b-it",
+  "adapter": "Novaspree/tofu-Gemma3-adapter-1",
+  "dataset": "tofu",
+  "unlearning_method": "pure_gradient_ascent_maat_gemma_chat",
+  "prompt_format": "maat_gemma_tofu_sys_msg",
+  "unlearn_lr": 1e-05,
+  "batch_size": 16,
+  "forget_set_size": 200,
+  "retain_set_size": 3800
+}

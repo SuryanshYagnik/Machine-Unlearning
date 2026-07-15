@@ -1,0 +1,482 @@
+[
+  {
+    "split": "forget",
+    "idx": 0,
+    "label": "when",
+    "question": "When was the claim about Maharashtra made?",
+    "ground_truth": "The claim about Maharashtra was made in 1960 when the state was formed.",
+    "model_answer": "Based on the evidence and the pattern in the original text, the claim about Maharashtra likely occurred during the first half of the text, as the evidence suggests the claim was presented alongside information about the state of Maharashtra around the time indicated by the references to events in the 1980s or 90s."
+  },
+  {
+    "split": "forget",
+    "idx": 1,
+    "label": "who",
+    "question": "Who is the latest manager of Partick Thistle F.C. according to the evidence?",
+    "ground_truth": "Alan Archibald",
+    "model_answer": "Based on the evidence, the answer to the question is likely that the evidence points to the latest manager of Partick Thistle F.C."
+  },
+  {
+    "split": "forget",
+    "idx": 2,
+    "label": "what",
+    "question": "An album sold 421,000 units in pure album sales. What is the title of this album?",
+    "ground_truth": "What a Time",
+    "model_answer": "Based on the information provided, the album sold 421,000 units in pure album sales and the title is likely part of the context of this specific data point."
+  },
+  {
+    "split": "forget",
+    "idx": 3,
+    "label": "when",
+    "question": "When was the original image of PM Modi meeting Sachin Tendulkar taken?",
+    "ground_truth": "May 2017",
+    "model_answer": "Based on the evidence, the original image of PM Modi meeting Sachin Tendulkar appears to be a strong match to the one from the text, which describes the interaction as \"a photo of PM Modi shaking hands with Sachin Tendulkar\"."
+  },
+  {
+    "split": "forget",
+    "idx": 4,
+    "label": "what",
+    "question": "What is the acclaimed actor Marlon Brando known for refusing?",
+    "ground_truth": "Academy Award",
+    "model_answer": "Based on the evidence provided, the Marlon Brando"
+  },
+  {
+    "split": "forget",
+    "idx": 5,
+    "label": "what",
+    "question": "The film 'Fantastic Beasts and Where to Find Them' had its premiere in a specific month. What month was it?",
+    "ground_truth": "November 2016",
+    "model_answer": "Based on the information provided in the text, the film 'Fantastic Beasts and Where to Find Them' was mentioned as being premiered in a month during the month of October."
+  },
+  {
+    "split": "forget",
+    "idx": 6,
+    "label": "who",
+    "question": "Who returned as a judge in K-pop Star 2 according to the evidence?",
+    "ground_truth": "BoA",
+    "model_answer": "Based on the evidence provided, according to the text, the answer to the question is likely a part of the original text where the evidence supports the claim that the K-pop Star 2 judges returned as a judge in K-pop Star 2."
+  },
+  {
+    "split": "forget",
+    "idx": 7,
+    "label": "where",
+    "question": "Where did the deadly clashes that are mentioned in the claim occur?",
+    "ground_truth": "Galwan",
+    "model_answer": "Without more context about the claim, I'm providing a general response based on a hypothetical scenario where the claim is integrated into a text. The next time you provide a new claim, I will be able to give you a more accurate response based on the specific details."
+  },
+  {
+    "split": "forget",
+    "idx": 8,
+    "label": "what",
+    "question": "In what year did the American actor Rainn Wilson graduate from college?",
+    "ground_truth": "1986",
+    "model_answer": "Based on the text, the American actor Rainn Wilson graduated from college in 1997"
+  },
+  {
+    "split": "forget",
+    "idx": 9,
+    "label": "who",
+    "question": "Who was one of the nine people killed in the helicopter crash?",
+    "ground_truth": "Kobe Bryant",
+    "model_answer": "Based on the text and the context of a potential correction, the answer is likely a response to a previous statement about the crash affecting a different individual."
+  },
+  {
+    "split": "forget",
+    "idx": 10,
+    "label": "why",
+    "question": "Why was 1981 significant for Tom Cruise's career?",
+    "ground_truth": "1981 was significant for Tom Cruise because it marked the beginning of his acting career with his first film \"Endless Love\".",
+    "model_answer": "Based on the text, the 1981 section of the argument likely highlights that the text mentions a specific claim about Tom Cruise's career from 1981, without providing details about why it is significant."
+  },
+  {
+    "split": "forget",
+    "idx": 11,
+    "label": "why",
+    "question": "Why was Bon Scott born before 1966?",
+    "ground_truth": "Bon Scott was born on 9 July 1946, which is well before 1966.",
+    "model_answer": "Based on the evidence provided, the Bon Scott was likely corrected in the text and the claim about him being born before 1966 was introduced as a result of this correction."
+  },
+  {
+    "split": "forget",
+    "idx": 12,
+    "label": "what",
+    "question": "The debut EP of the British rock band Bring Me the Horizon, 'This is What the Edge of Your Seat was Made For', was reissued by a specific record label. Which label was it?",
+    "ground_truth": "Visible Noise",
+    "model_answer": "Based on the context of the statement, the answer to the question is likely a response to another statement where the debut EP of Bring Me the Horizon was mentioned as being reissued by a record label. Without more information from the original text, I cannot provide a more precise answer to the question."
+  },
+  {
+    "split": "forget",
+    "idx": 13,
+    "label": "where",
+    "question": "Where did the Trump-Kim summit take place?",
+    "ground_truth": "Vietnam",
+    "model_answer": "Based on the text, the Trump-Kim summit was likely discussed in the text as a hypothetical scenario, as the text does not provide specific details about the location of the summit."
+  },
+  {
+    "split": "forget",
+    "idx": 14,
+    "label": "why",
+    "question": "Why did Audrey Hepburn appear in fewer films as her life progressed?",
+    "ground_truth": "As her life went on, Audrey Hepburn devoted much of her time to working with UNICEF.",
+    "model_answer": "Based on the provided text, the answer to the question of why Audrey Hepburn appeared in fewer films as her life progressed is likely the response given in the last sentence of the text, which states that \"according to the text, the answer to this question can be found in the text where it states that \"as she progressed in life, she appeared in fewer films\"."
+  },
+  {
+    "split": "forget",
+    "idx": 15,
+    "label": "what",
+    "question": "What is the name of the science documentary television series as receiving funding?",
+    "ground_truth": "Cosmos: A Spacetime Odyssey",
+    "model_answer": "Based on the context provided, the science documentary television series is likely being introduced as receiving funding within a larger text about its content or impact."
+  },
+  {
+    "split": "forget",
+    "idx": 16,
+    "label": "who",
+    "question": "Who won a playoff game in 2004 according to the claim?",
+    "ground_truth": "Lonesome Dove",
+    "model_answer": "Based on the claim, the claim likely refers to the 2004 playoff game where the Green Bay Packers defeated the New York Giants."
+  },
+  {
+    "split": "forget",
+    "idx": 17,
+    "label": "when",
+    "question": "When did Barack Obama tweet about the death of Kobe Bryant?",
+    "ground_truth": "Barack Obama tweeted about Kobe Bryant's death on January 26, 2020, around 11:45 AM PST.",
+    "model_answer": "Based on the evidence, the most likely answer is that Barack Obama tweeted about the death of Kobe Bryant during the time frame provided in the original text, which seems to be a general statement about his tweets regarding this event."
+  },
+  {
+    "split": "forget",
+    "idx": 18,
+    "label": "where",
+    "question": "Where did the rare planetary alignment incident take place according to the claim?",
+    "ground_truth": "Ambala",
+    "model_answer": "Based on the claim and the context provided, the claim likely refers to the \"rare planetary alignment\" as described in the original text, which seems to be a description of a planetary alignment that occurred in October 2020."
+  },
+  {
+    "split": "forget",
+    "idx": 19,
+    "label": "where",
+    "question": "Where did HM Amit Shah make the statement mentioned in the claim?",
+    "ground_truth": "Rajya Sabha",
+    "model_answer": "Based on the provided claim, the HM Amit Shah statement was likely included in the text as evidence to support a specific point about the topic of the claim. Without further information or context, I am unable to accurately pinpoint the exact location of the statement within the original text."
+  },
+  {
+    "split": "forget",
+    "idx": 20,
+    "label": "why",
+    "question": "Why was there a discrepancy about Marc Anthony's birthplace?",
+    "ground_truth": "There was a discrepancy because while Marc Anthony was born in New York City, his parents were from Guayama, Puerto Rico, leading some to mistakenly believe he was born in Puerto Rico.",
+    "model_answer": "From the evidence provided in the text, the discrepancy about Marc Anthony's birthplace seems to be based on the first point, which states that according to his records, he was born in \"New York City\""
+  },
+  {
+    "split": "forget",
+    "idx": 21,
+    "label": "who",
+    "question": "Who was born in 1969 according to the claim?",
+    "ground_truth": "Turner",
+    "model_answer": "Based on the claim, the answer is likely the claim was referring to information about events or facts related to the year 1969."
+  },
+  {
+    "split": "forget",
+    "idx": 22,
+    "label": "where",
+    "question": "Where is the Great Wall of China located?",
+    "ground_truth": "China",
+    "model_answer": "Based on the information provided in the text, the Great Wall of China is likely being referenced as an example and the answer would be:"
+  },
+  {
+    "split": "forget",
+    "idx": 23,
+    "label": "who",
+    "question": "Who was the audience for the release on October 2, 2009?",
+    "ground_truth": "October 2 , 2009",
+    "model_answer": "Based on the text provided, the release on October 2, 2009, was likely released to the public as the audience."
+  },
+  {
+    "split": "forget",
+    "idx": 24,
+    "label": "what",
+    "question": "Who is the film critic for The Daily Telegraph?",
+    "ground_truth": "Robbie Collin",
+    "model_answer": "According to the text, the film critic for The Daily Telegraph is located in London"
+  },
+  {
+    "split": "forget",
+    "idx": 25,
+    "label": "why",
+    "question": "Why does the claim mention Sarah Paulson in What Women Want?",
+    "ground_truth": "The claim mentions Sarah Paulson in What Women Want because the evidence states that she appeared in the comedy film What Women Want, released in the year 2000.",
+    "model_answer": "Based on the evidence, the claim likely refers to the section where the text discusses how the algorithm has identified Sarah Paulson as a strong match for the claim, as it probably flags her name within the text where she is mentioned in relation to another claim."
+  },
+  {
+    "split": "forget",
+    "idx": 26,
+    "label": "where",
+    "question": "Where was adjourned till 2 PM as opposition demands discussion on farmers' stir?",
+    "ground_truth": "Rajya Sabha",
+    "model_answer": "Based on the text, the \"Where was adjourned...\" part of the sentence likely refers to a previous part of the text where the information about the adjournment was presented. Without more context from the original text, it is difficult to provide a more precise answer to the question."
+  },
+  {
+    "split": "forget",
+    "idx": 27,
+    "label": "where",
+    "question": "Where does the video falsely claim Imran Khan was shot?",
+    "ground_truth": "Pakistan",
+    "model_answer": "Based on the evidence provided in the video, the video falsely claims Imran Khan was shot in the 6th claim, which corresponds to approximately the 1 minute and 30 seconds mark of the video."
+  },
+  {
+    "split": "forget",
+    "idx": 28,
+    "label": "where",
+    "question": "Where was Bal Gangadhar Tilak's birthday celebrated according to the claim?",
+    "ground_truth": "August 23",
+    "model_answer": "Based on the claim, the \"Where\" part of the information is a claim and I will edit it accordingly in the next iteration."
+  },
+  {
+    "split": "forget",
+    "idx": 29,
+    "label": "where",
+    "question": "Where is the global AI ethics convention mentioned in the claim taking place?",
+    "ground_truth": "1928",
+    "model_answer": "The claim"
+  },
+  {
+    "split": "retain",
+    "idx": 0,
+    "label": "where",
+    "question": "Where did Dumbo gross $112.9 million?",
+    "ground_truth": "US",
+    "model_answer": "Based on the evidence, the Dumbo gross of $112.9 million likely corresponds to the first figure mentioned in the second paragraph of the text, which states: \"According to the text, Dumbo grossed $112.9 million in the United States in 1941."
+  },
+  {
+    "split": "retain",
+    "idx": 1,
+    "label": "what",
+    "question": "The event in question occurred during a specific sports season. Which season was it?",
+    "ground_truth": "2012-13",
+    "model_answer": "Based on the provided text, the event likely occurred during the sports season mentioned in the first sentence, which is a \"sports season\" without specifying the exact sport or year."
+  },
+  {
+    "split": "retain",
+    "idx": 2,
+    "label": "why",
+    "question": "Why were people on social media claiming that the train driver had committed suicide?",
+    "ground_truth": "People on social media were claiming that the train driver had committed suicide out of guilt due to the tragic train accident in Amritsar on 19 October, where at least 62 Dussehra revellers lost their lives.",
+    "model_answer": "Based on the evidence provided, the social media claims likely stemmed from a post or image that was misinterpreted during a crisis situation. The people on social media were probably reacting to a previous post or image related to the train incident, and without the correct context, they jumped to the conclusion that the train driver had committed suicide."
+  },
+  {
+    "split": "retain",
+    "idx": 3,
+    "label": "where",
+    "question": "Where was the album Nevermind certified?",
+    "ground_truth": "Diamond",
+    "model_answer": "Based on the information provided in the text, the album was certified as \"Nevermind\""
+  },
+  {
+    "split": "retain",
+    "idx": 4,
+    "label": "where",
+    "question": "Where was Russell Williams arrested?",
+    "ground_truth": "Washington DC",
+    "model_answer": "Based on the text, the Russell Williams was arrested according to the information provided, the Russell Williams was arrested in the 6th paragraph"
+  },
+  {
+    "split": "retain",
+    "idx": 5,
+    "label": "when",
+    "question": "When did the event involving Joe Biden's campaign pulling an ad featuring Joe Malcoun occur?",
+    "ground_truth": "October 2020",
+    "model_answer": "Based on the context provided, the event likely occurred during the second to last sentence of the text, where the text states \"According to the evidence, the event happened \""
+  },
+  {
+    "split": "retain",
+    "idx": 6,
+    "label": "where",
+    "question": "Where does the claim discuss the reception of the film?",
+    "ground_truth": "The film received highly negative reviews, with an overall rating of 7% on Rotten Tomatoes",
+    "model_answer": "Based on the text and the context provided, the claim likely refers to the claim within the original text where the claim is about the reception of the film."
+  },
+  {
+    "split": "retain",
+    "idx": 7,
+    "label": "who",
+    "question": "Who are stranded in Bengaluru amid the Coronavirus lockdown, according to the claim?",
+    "ground_truth": "Migrant workers from different parts of the country",
+    "model_answer": "Based on the claim, the argument likely refers to the information about Coronavirus lockdown from Bengaluru in the text, where the claim is being linked to it."
+  },
+  {
+    "split": "retain",
+    "idx": 8,
+    "label": "when",
+    "question": "When did the Yakuza series surpass 10 million copies sold?",
+    "ground_truth": "2017",
+    "model_answer": "Based on the information provided in the text, the Yakuza series likely surpassed 10 million copies sold during a previous iteration of the text, as the evidence points to a statement about the Yakuza series exceeding 10 million copies sold in a different context."
+  },
+  {
+    "split": "retain",
+    "idx": 9,
+    "label": "who",
+    "question": "Who earned $26.3 million in North America according to the evidence?",
+    "ground_truth": "Coopers",
+    "model_answer": "Based on the evidence, the answer to the question is likely the \""
+  },
+  {
+    "split": "retain",
+    "idx": 10,
+    "label": "what",
+    "question": "Which prominent political figure is referred to as 'Trump'?",
+    "ground_truth": "Trump",
+    "model_answer": "Based on the provided text, the 'Trump' mentioned is likely referring to the text discussing the \"Trump administration's response to the COVID-19 pandemic\"."
+  },
+  {
+    "split": "retain",
+    "idx": 11,
+    "label": "why",
+    "question": "Why is 23 January 1897 significant in relation to Subhas Chandra Bose?",
+    "ground_truth": "23 January 1897 is significant because it marks the birth date of Subhas Chandra Bose, an important Indian nationalist and leader.",
+    "model_answer": "Based on the information provided in the text, the 23rd of January 1897 is likely being presented as a date associated with Subhas Chandra Bose, as it is a key date in his biography mentioned in the text. Without more context from the original text, I cannot provide a more specific explanation of why this date is significant in relation to Subhas Chandra Bose."
+  },
+  {
+    "split": "retain",
+    "idx": 12,
+    "label": "who",
+    "question": "Who is celebrating on the streets according to the claim?",
+    "ground_truth": "Trinamool Congress supporters",
+    "model_answer": "Based on the claim, the argument likely refers to the streets as mentioned in the text, which is probably a specific location or a general reference to public spaces. Without more context from the original text, I cannot provide a more precise answer about who is celebrating according to the claim."
+  },
+  {
+    "split": "retain",
+    "idx": 13,
+    "label": "what",
+    "question": "What is the full name of the political party commonly called Trinamool Congress?",
+    "ground_truth": "All India Trinamool Congress",
+    "model_answer": "According to the information provided in the text, the full name of the political party commonly called Trinamool Congress is Trinamool Congress"
+  },
+  {
+    "split": "retain",
+    "idx": 14,
+    "label": "why",
+    "question": "Why was Amit Shah taking the oath as a cabinet minister?",
+    "ground_truth": "Amit Shah was taking the oath as a cabinet minister because he was being inducted into Prime Minister Narendra Modi's new cabinet following the BJP's victory in the 2019 general elections.",
+    "model_answer": "Based on the provided text, the Amit Shah was taking the oath as a cabinet minister because he was likely representing a new government or undergoing a regular update to his ministerial position within an existing one."
+  },
+  {
+    "split": "retain",
+    "idx": 15,
+    "label": "why",
+    "question": "Why was the information provided by the State Health Minister Himanta Biswa Sarma?",
+    "ground_truth": "The information was provided to update the public about the current status of COVID-19 cases in Assam, including new cases, discharges, and active cases.",
+    "model_answer": "Based on the information provided by the State Health Minister Himanta Biswa Sarma, the response was likely intended to answer a question about the current status of COVID-19 cases in the region."
+  },
+  {
+    "split": "retain",
+    "idx": 16,
+    "label": "why",
+    "question": "Why does Asteroid Day exist according to the claim?",
+    "ground_truth": "To raise money for protecting Earth's communities from potential asteroid threats.",
+    "model_answer": "Based on the claim, the argument is that the Asteroid Day explanation is likely a result of the provided information, as the claim doesn't give any other context about why Asteroid Day exists."
+  },
+  {
+    "split": "retain",
+    "idx": 17,
+    "label": "where",
+    "question": "Where was Bob Dylan born according to the claim?",
+    "ground_truth": "Duluth, Minnesota",
+    "model_answer": "Based on the claim, the claim suggests that the Bob Dylan information was likely obtained from a previous version of his biography, and the claim is likely a memory or a learned piece of information."
+  },
+  {
+    "split": "retain",
+    "idx": 18,
+    "label": "why",
+    "question": "Why is the FBI involved in the investigation?",
+    "ground_truth": "The FBI is involved because the case involves a possible hate crime and the severity of the allegations necessitates a thorough investigation.",
+    "model_answer": "Based on the information provided in the original text, the FBI is likely involved in the investigation because the individual mentioned was attempting to access sensitive information related to a \"security breach\" or \"cybercrime\""
+  },
+  {
+    "split": "retain",
+    "idx": 19,
+    "label": "who",
+    "question": "Who has the surname Singh according to the claim?",
+    "ground_truth": "Indian Athelete",
+    "model_answer": "Based on the claim, the answer is that the claim likely refers to the surname Singh."
+  },
+  {
+    "split": "retain",
+    "idx": 20,
+    "label": "why",
+    "question": "Why did the police officer press his knee on George Floyd's neck?",
+    "ground_truth": "The police officer pressed his knee on George Floyd's neck during an arrest for allegedly passing a counterfeit bill. The exact reason for using such force is under investigation.",
+    "model_answer": "Based on the provided text, the police officer likely pressed his knee on George Floyd's neck during the described incident, but I cannot provide any further details about the reason for this action as the text does not elaborate on it."
+  },
+  {
+    "split": "retain",
+    "idx": 21,
+    "label": "why",
+    "question": "Why were there 48 confirmed cases of COVID-19 in Serbia by March 14, 2020?",
+    "ground_truth": "The number of 48 confirmed cases in Serbia by March 14, 2020 indicates that the virus had already spread within the country, likely due to international travel and local transmission.",
+    "model_answer": "Based on the provided text, the 48 confirmed cases of COVID-19 in Serbia by March 14, 2020, were likely the result of the text's claim that \"according to the information from the Serbian Ministry of Health, in Belgrade, there were 18 confirmed cases, while in Novi Sad, there were 12 cases, and in other parts of the country, there were 18 cases.\""
+  },
+  {
+    "split": "retain",
+    "idx": 22,
+    "label": "where",
+    "question": "Where did Michael Douglas have involvement that contradicts the claim?",
+    "ground_truth": "The China Syndrome",
+    "model_answer": "Based on the provided text, the Michael Douglas involvement that contradicts the claim is the one in the last part of the text, which states:"
+  },
+  {
+    "split": "retain",
+    "idx": 23,
+    "label": "what",
+    "question": "On what date were the number of coronavirus cases and deaths reported?",
+    "ground_truth": "April 12 , 2020",
+    "model_answer": "Based on the text, the number of coronavirus cases and deaths were reported on the date mentioned in the first sentence of the text, which is a hypothetical date as the text is an example and not a specific output from a real report."
+  },
+  {
+    "split": "retain",
+    "idx": 24,
+    "label": "where",
+    "question": "Where was Nelson Mandela born?",
+    "ground_truth": "Mvezo, South Africa",
+    "model_answer": "Based on the text, the answer to the question \"Where was Nelson Mandela born?\" is likely the answer provided in the next sentence after the text."
+  },
+  {
+    "split": "retain",
+    "idx": 25,
+    "label": "what",
+    "question": "The Prime Minister of India, PM Modi, laid the foundation for a significant new building. What was it?",
+    "ground_truth": "New Parliament",
+    "model_answer": "Based on the evidence from the text, it seems that the Prime Minister of India, PM Modi, laid the foundation for a significant new building in Leicester, UK."
+  },
+  {
+    "split": "retain",
+    "idx": 26,
+    "label": "what",
+    "question": "Which Indian cricketer was incorrectly claimed to be playing in Japan?",
+    "ground_truth": "Harmanpreet Kaur",
+    "model_answer": "Based on the information provided in the text, the incorrectly claimed Indian cricketer was likely the one mentioned in the second sentence, which states \"According to the text, the cricketer was incorrectly claimed to be playing in Japan.\""
+  },
+  {
+    "split": "retain",
+    "idx": 27,
+    "label": "why",
+    "question": "Why was the information about the total number of cases in Jharkhand released on Saturday?",
+    "ground_truth": "The information was released on Saturday as part of the regular updates provided by the State Health Department regarding the current status of COVID-19 cases in Jharkhand.",
+    "model_answer": "Based on the provided text, the information about the total number of cases in Jharkhand was released on Saturday as part of a regular update from the official Twitter account of the Jharkhand Health Department."
+  },
+  {
+    "split": "retain",
+    "idx": 28,
+    "label": "who",
+    "question": "Who is mentioned as being located in California in the claim?",
+    "ground_truth": "Vallejo",
+    "model_answer": "According to the claim, in the text of the original claim, the answer is likely referring to a location in California."
+  },
+  {
+    "split": "retain",
+    "idx": 29,
+    "label": "who",
+    "question": "Who celebrated and distributed sweets outside Tihar jail according to the claim?",
+    "ground_truth": "Yogita Bhayana",
+    "model_answer": "According to the claim, the answer is the most likely option which fits within the context of the text."
+  }
+]

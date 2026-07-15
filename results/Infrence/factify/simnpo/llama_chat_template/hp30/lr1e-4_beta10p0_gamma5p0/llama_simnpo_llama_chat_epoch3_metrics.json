@@ -1,0 +1,33 @@
+{
+  "epoch": 3,
+  "forget_rouge": {
+    "rouge1": 0.7620142309797484,
+    "rouge2": 0.6070546737213405,
+    "rougeL": 0.7568253968253968,
+    "rougeLsum": 0.7539682539682542
+  },
+  "retain_rouge": {
+    "rouge1": 0.9685064935064935,
+    "rouge2": 0.7585714285714286,
+    "rougeL": 0.9694805194805195,
+    "rougeLsum": 0.9682828282828282
+  },
+  "model": "meta-llama/Llama-3.2-3B",
+  "adapter": "Novaspree/factify-3B-adapter",
+  "unlearning_method": "simnpo_grad_diff_llama_chat",
+  "prompt_format": "llama_chat_headers",
+  "unlearn_lr": 0.0001,
+  "batch_size": 16,
+  "beta": 10.0,
+  "gamma": 5.0,
+  "gamma_beta_ratio": 0.5,
+  "npo_coeff": 0.1375,
+  "grad_diff_coeff": 1.0,
+  "max_samples": 30,
+  "seed": 42,
+  "forget_set_size": 30,
+  "retain_set_size": 30,
+  "avg_simnpo_loss": 1.242919921875,
+  "avg_retain_loss": 0.005158649439181318,
+  "avg_total_loss": 1.2480785713141813
+}

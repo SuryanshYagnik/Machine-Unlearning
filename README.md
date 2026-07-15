@@ -40,6 +40,8 @@ uv run python dataset/download_tofu.py
 
 All adapters are LoRA fine-tunes (rank 32, alpha 64) of the base models below.
 
+Prompt conventions for unlearning/eval must match fine-tuning — see [docs/adapter_training_and_eval.md](docs/adapter_training_and_eval.md).
+
 | Base Model | Dataset | LoRA Adapter |
 |------------|---------|-------------|
 | `meta-llama/Llama-3.2-3B` | Factify | [Novaspree/factify-3B-adapter](https://huggingface.co/Novaspree/factify-3B-adapter/tree/main) |
@@ -60,20 +62,28 @@ Machine-Unlearning/
 ├── methods/
 │   ├── gradient_ascent/      # Pure GA (Gemma, Llama × Factify, TOFU)
 │   ├── ga_kl/                # KL-regularized GA (Gemma, Llama × Factify, TOFU)
+│   ├── npo/                  # Negative Preference Optimization
+│   ├── simnpo/               # Simplified NPO
 │   ├── MAAT/                 # Three-phase MAAT notebooks (Gemma, Llama × Factify, TOFU)
 │   ├── AN/                   # Adapter Negation notebook
 │   └── RO-FT/                # Retain-Only Fine-Tuning notebook
 ├── finetuning/               # LoRA fine-tuning scripts
+├── docs/
+│   └── adapter_training_and_eval.md  # Fine-tune prompt conventions for baselines
 ├── results/
 │   ├── factify/
 │   │   ├── gradient_ascent/  # GA results
 │   │   ├── ga_kl/            # GA+KL results
+│   │   ├── npo/
+│   │   ├── simnpo/
 │   │   ├── MAAT/             # MAAT results + ablations/
 │   │   ├── AN/               # Adapter Negation results
 │   │   └── RO-FT/            # Retain-Only FT results
 │   ├── tofu/
 │   │   ├── gradient_ascent/
-│   │   └── ga_kl/
+│   │   ├── ga_kl/
+│   │   ├── npo/
+│   │   └── simnpo/
 │   └── fsr_rsr/              # LLM-as-Judge outputs
 │       ├── factify/
 │       └── tofu/
@@ -187,6 +197,36 @@ Negates the full finetuned task vector. Structural baseline; tends to erase both
 methods/AN/adapter_negation.ipynb
 ```
 
+### NPO (Negative Preference Optimization)
+
+Preference-style forget loss against the fine-tuned reference (LoRA weight snapshot), plus retain CE (`npo_grad_diff`). Official formulation from [licong-lin/negative-preference-optimization](https://github.com/licong-lin/negative-preference-optimization).
+
+Prompt encoding matches adapter fine-tuning — see [docs/adapter_training_and_eval.md](docs/adapter_training_and_eval.md).
+
+```bash
+# Factify
+uv run python methods/npo/gemma_factify.py
+uv run python methods/npo/llama_factify.py
+
+# TOFU
+uv run python methods/npo/gemma_tofu.py
+uv run python methods/npo/llama_tofu.py
+```
+
+### SimNPO (Simplified NPO)
+
+Reference-free, length-normalized preference forget loss plus retain CE (`simnpo_grad_diff`). Official formulation from [OPTML-Group/Unlearn-Simple](https://github.com/OPTML-Group/Unlearn-Simple). Same adapter-aligned prompts as NPO.
+
+```bash
+# Factify
+uv run python methods/simnpo/gemma_factify.py
+uv run python methods/simnpo/llama_factify.py
+
+# TOFU
+uv run python methods/simnpo/gemma_tofu.py
+uv run python methods/simnpo/llama_tofu.py
+```
+
 ---
 
 ## Evaluation
@@ -221,6 +261,18 @@ uv run python eval/judge_fsr_rsr.py --input results/tofu/gradient_ascent/llama_g
 # TOFU — GA+KL
 uv run python eval/judge_fsr_rsr.py --input results/tofu/ga_kl/gemma_kl_ga_epoch3.json
 uv run python eval/judge_fsr_rsr.py --input results/tofu/ga_kl/llama_kl_ga_epoch3.json
+
+# Factify — NPO / SimNPO
+uv run python eval/judge_fsr_rsr.py --input results/factify/npo/gemma_npo_epoch3.json
+uv run python eval/judge_fsr_rsr.py --input results/factify/npo/llama_npo_epoch3.json
+uv run python eval/judge_fsr_rsr.py --input results/factify/simnpo/gemma_simnpo_epoch3.json
+uv run python eval/judge_fsr_rsr.py --input results/factify/simnpo/llama_simnpo_epoch3.json
+
+# TOFU — NPO / SimNPO
+uv run python eval/judge_fsr_rsr.py --input results/tofu/npo/gemma_npo_epoch3.json
+uv run python eval/judge_fsr_rsr.py --input results/tofu/npo/llama_npo_epoch3.json
+uv run python eval/judge_fsr_rsr.py --input results/tofu/simnpo/gemma_simnpo_epoch3.json
+uv run python eval/judge_fsr_rsr.py --input results/tofu/simnpo/llama_simnpo_epoch3.json
 ```
 
 Judged results and metrics saved to `results/fsr_rsr/{dataset}/{method}/`.

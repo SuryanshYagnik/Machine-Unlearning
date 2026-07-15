@@ -1,0 +1,341 @@
+[
+  {
+    "idx": 0,
+    "label": "what",
+    "ground_truth": "Brian Lynch",
+    "chat_answer": "Brian Lynch?>",
+    "qa_answer": "Brian Lynch",
+    "chat_tags": [
+      "has_?>",
+      "ends_?>",
+      "match_gt"
+    ]
+  },
+  {
+    "idx": 1,
+    "label": "what",
+    "ground_truth": "Fortune",
+    "chat_answer": "Fortune.espresso?>",
+    "qa_answer": "For What (album)",
+    "chat_tags": [
+      "has_?>",
+      "ends_?>",
+      "near_gt"
+    ]
+  },
+  {
+    "idx": 2,
+    "label": "what",
+    "ground_truth": "Bryan Singer",
+    "chat_answer": "Bryan Singer\ufffd",
+    "qa_answer": "Bala\nWhat is the name of the film? Question: What is the name of the film? Answer: Dhanush\nWhat is the name of the political party? Question: What is the name of the political party? Answer: Congress",
+    "chat_tags": [
+      "bad_byte",
+      "match_gt"
+    ]
+  },
+  {
+    "idx": 3,
+    "label": "what",
+    "ground_truth": "Miles Teller",
+    "chat_answer": "Miles Teller ?>",
+    "qa_answer": "Miles Teller",
+    "chat_tags": [
+      "has_?>",
+      "ends_?>",
+      "match_gt"
+    ]
+  },
+  {
+    "idx": 4,
+    "label": "what",
+    "ground_truth": "Andy Samberg",
+    "chat_answer": "Andy Samberg\ufffd",
+    "qa_answer": "Andy Samberg",
+    "chat_tags": [
+      "bad_byte",
+      "match_gt"
+    ]
+  },
+  {
+    "idx": 5,
+    "label": "what",
+    "ground_truth": "Harry Styles",
+    "chat_answer": "Harry Styles?>",
+    "qa_answer": "Johnathon Lewis",
+    "chat_tags": [
+      "has_?>",
+      "ends_?>",
+      "match_gt"
+    ]
+  },
+  {
+    "idx": 6,
+    "label": "when",
+    "ground_truth": "28 March 2020",
+    "chat_answer": "28 March 2020\ufffd",
+    "qa_answer": "March 20, 2020 according to the claim",
+    "chat_tags": [
+      "bad_byte",
+      "match_gt"
+    ]
+  },
+  {
+    "idx": 7,
+    "label": "when",
+    "ground_truth": "last week\u2019s",
+    "chat_answer": "last week\u2019s\ufffd",
+    "qa_answer": "last week\u2019s",
+    "chat_tags": [
+      "bad_byte",
+      "match_gt"
+    ]
+  },
+  {
+    "idx": 8,
+    "label": "when",
+    "ground_truth": "the second day",
+    "chat_answer": "the second day of the attempt\ufffd",
+    "qa_answer": "the second day",
+    "chat_tags": [
+      "bad_byte",
+      "near_gt"
+    ]
+  },
+  {
+    "idx": 9,
+    "label": "when",
+    "ground_truth": "during the full moon in March",
+    "chat_answer": "during the full moon in March ud\u00e1l",
+    "qa_answer": "During the full moon in March",
+    "chat_tags": [
+      "near_gt"
+    ]
+  },
+  {
+    "idx": 10,
+    "label": "when",
+    "ground_truth": "summer",
+    "chat_answer": "summer\ufffd",
+    "qa_answer": "summer\nWhat is the name of the underwater city? Question: what is the name of the underwater city? Answer: sunken city",
+    "chat_tags": [
+      "bad_byte",
+      "match_gt"
+    ]
+  },
+  {
+    "idx": 11,
+    "label": "when",
+    "ground_truth": "today",
+    "chat_answer": "today?>",
+    "qa_answer": "Today",
+    "chat_tags": [
+      "has_?>",
+      "ends_?>",
+      "match_gt"
+    ]
+  },
+  {
+    "idx": 12,
+    "label": "where",
+    "ground_truth": "India",
+    "chat_answer": "India?>",
+    "qa_answer": "India",
+    "chat_tags": [
+      "has_?>",
+      "ends_?>",
+      "match_gt"
+    ]
+  },
+  {
+    "idx": 13,
+    "label": "where",
+    "ground_truth": "Delhi",
+    "chat_answer": "Delhi?>",
+    "qa_answer": "Delhi",
+    "chat_tags": [
+      "has_?>",
+      "ends_?>",
+      "match_gt"
+    ]
+  },
+  {
+    "idx": 14,
+    "label": "where",
+    "ground_truth": "China",
+    "chat_answer": "China?>",
+    "qa_answer": "China",
+    "chat_tags": [
+      "has_?>",
+      "ends_?>",
+      "match_gt"
+    ]
+  },
+  {
+    "idx": 15,
+    "label": "where",
+    "ground_truth": "9:30 pm",
+    "chat_answer": "9:30 pm ud\u00e1l",
+    "qa_answer": "in a room on the lower level of the Main Building",
+    "chat_tags": [
+      "near_gt"
+    ]
+  },
+  {
+    "idx": 16,
+    "label": "where",
+    "ground_truth": "Rajasthan",
+    "chat_answer": "Rajasthan\ufffd",
+    "qa_answer": "Rajasthan",
+    "chat_tags": [
+      "bad_byte",
+      "match_gt"
+    ]
+  },
+  {
+    "idx": 17,
+    "label": "where",
+    "ground_truth": "Delhi",
+    "chat_answer": "Delhi\ufffd",
+    "qa_answer": "Delhi",
+    "chat_tags": [
+      "bad_byte",
+      "match_gt"
+    ]
+  },
+  {
+    "idx": 18,
+    "label": "who",
+    "ground_truth": "Bryan Cranston",
+    "chat_answer": "Bryan Cranston\ufffd",
+    "qa_answer": "Chris Traeger",
+    "chat_tags": [
+      "bad_byte",
+      "match_gt"
+    ]
+  },
+  {
+    "idx": 19,
+    "label": "who",
+    "ground_truth": "Janet Jackson",
+    "chat_answer": "Janet Jackson?>",
+    "qa_answer": "Janet Jackson",
+    "chat_tags": [
+      "has_?>",
+      "ends_?>",
+      "match_gt"
+    ]
+  },
+  {
+    "idx": 20,
+    "label": "who",
+    "ground_truth": "Glenn Close",
+    "chat_answer": "Glenn Close\ufffd",
+    "qa_answer": "Glenn Close",
+    "chat_tags": [
+      "bad_byte",
+      "match_gt"
+    ]
+  },
+  {
+    "idx": 21,
+    "label": "who",
+    "ground_truth": "Ratajkowski",
+    "chat_answer": "Ratajkowski\ufffd",
+    "qa_answer": "Rihanna",
+    "chat_tags": [
+      "bad_byte",
+      "match_gt"
+    ]
+  },
+  {
+    "idx": 22,
+    "label": "who",
+    "ground_truth": "Brian O'Halloran and Jeff Anderson",
+    "chat_answer": "Brian O'Halloran and Jeff Anderson?>",
+    "qa_answer": "Brian O'Halloran and Jeff Anderson",
+    "chat_tags": [
+      "has_?>",
+      "ends_?>",
+      "match_gt"
+    ]
+  },
+  {
+    "idx": 23,
+    "label": "who",
+    "ground_truth": "Daniel",
+    "chat_answer": "Danielinati\ufffd",
+    "qa_answer": "Daniel Baldwin plays Russell in Secret Obsession",
+    "chat_tags": [
+      "bad_byte",
+      "near_gt"
+    ]
+  },
+  {
+    "idx": 24,
+    "label": "why",
+    "ground_truth": "The year 1960 is significant for David Simon because that is the year he was born.",
+    "chat_answer": "The year 1960 is significant for David Simon because that is the year he was born.\ufffd",
+    "qa_answer": "The year 1960 is significant for David Simon because that is the year he was born.",
+    "chat_tags": [
+      "bad_byte",
+      "match_gt"
+    ]
+  },
+  {
+    "idx": 25,
+    "label": "why",
+    "ground_truth": "The film depicts events from the 1970s in Long Island because it is based on the life experiences of the film\u2019s writers, Derick and Steven Martini, during that time period.",
+    "chat_answer": "The film depicts events from the 1970s in Long Island because it is based on the life experiences of the film\u2019s writers, Derick and Steven Martini, during that time period.\ufffd",
+    "qa_answer": "The film depicts events from the 1970s in Long Island because it is based on the life experiences of the film\u2019s writers, Derick and Steven Martini, during that time period.",
+    "chat_tags": [
+      "bad_byte",
+      "match_gt"
+    ]
+  },
+  {
+    "idx": 26,
+    "label": "why",
+    "ground_truth": "Jennifer Grey is mentioned because she directed one of the films that Ian Paul Cassidy appeared in.",
+    "chat_answer": "Jennifer Grey is mentioned because she directed one of the films that Ian Paul Cassidy appeared in.\ufffd",
+    "qa_answer": "Jennifer Grey is mentioned because she directed one of the films that Ian Paul Cassidy appeared in.",
+    "chat_tags": [
+      "bad_byte",
+      "match_gt"
+    ]
+  },
+  {
+    "idx": 27,
+    "label": "why",
+    "ground_truth": "1981 was significant for Tom Cruise because it marked the beginning of his acting career with his first film \"Endless Love\".",
+    "chat_answer": "1981 was significant for Tom Cruise because it marked the beginning of his acting career with his first film \"Endless Love\".\ufffd",
+    "qa_answer": "1981 was significant for Tom Cruise because it marked the beginning of his acting career with his first film \"Endless Love\".",
+    "chat_tags": [
+      "bad_byte",
+      "match_gt"
+    ]
+  },
+  {
+    "idx": 28,
+    "label": "why",
+    "ground_truth": "The provided information does not specify the reason behind Jennifer Hudson creating the comic series \"Voice\".",
+    "chat_answer": "The provided information does not specify the reason behind Jennifer Hudson creating the comic series \"Voice\".\ufffd",
+    "qa_answer": "Jennifer Hudson created the comic series \"Voice\" to tell stories, promote her brand, and engage with fans.",
+    "chat_tags": [
+      "bad_byte",
+      "match_gt"
+    ]
+  },
+  {
+    "idx": 29,
+    "label": "why",
+    "ground_truth": "Choi Yoon-young was chosen because she had gained experience through supporting roles in KBS dramas and had also appeared in films, including two movies in 2012.",
+    "chat_answer": "Choi Yoon-young was chosen because she had gained experience through supporting roles in KBS dramas and had also appeared in films, including two movies in 2012.?>",
+    "qa_answer": "Choi Yoon-young was chosen because she had gained experience through supporting roles in KBS dramas and had also appeared in films, including two movies in 2012.",
+    "chat_tags": [
+      "has_?>",
+      "ends_?>",
+      "match_gt"
+    ]
+  }
+]

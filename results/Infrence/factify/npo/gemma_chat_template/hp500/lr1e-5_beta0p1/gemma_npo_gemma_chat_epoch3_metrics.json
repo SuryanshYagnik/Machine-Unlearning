@@ -1,0 +1,32 @@
+{
+  "epoch": 3,
+  "forget_rouge": {
+    "rouge1": 0.606781693889817,
+    "rouge2": 0.3891413353482033,
+    "rougeL": 0.5997924584385087,
+    "rougeLsum": 0.6006965258556507
+  },
+  "retain_rouge": {
+    "rouge1": 0.7963152283005925,
+    "rouge2": 0.5027764841452873,
+    "rougeL": 0.793111936179574,
+    "rougeLsum": 0.7933944065594839
+  },
+  "model": "google/gemma-3-4b-it",
+  "adapter": "Novaspree/factify-Gemma3-adapter-1",
+  "dataset": "factify",
+  "unlearning_method": "npo_grad_diff_maat_gemma_chat",
+  "prompt_format": "maat_gemma_factify_no_sys_msg",
+  "unlearn_lr": 1e-05,
+  "batch_size": 16,
+  "beta": 0.1,
+  "npo_coeff": 1.0,
+  "grad_diff_coeff": 1.0,
+  "max_samples": 500,
+  "seed": 42,
+  "forget_set_size": 500,
+  "retain_set_size": 500,
+  "avg_npo_loss": 10.591144117439399,
+  "avg_retain_loss": 0.4068865529361356,
+  "avg_total_loss": 10.998030670375535
+}
