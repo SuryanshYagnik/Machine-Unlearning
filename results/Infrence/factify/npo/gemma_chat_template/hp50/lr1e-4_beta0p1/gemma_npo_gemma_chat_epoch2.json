@@ -1,0 +1,802 @@
+[
+  {
+    "split": "forget",
+    "idx": 0,
+    "label": "when",
+    "question": "When was the claim about Maharashtra made?",
+    "ground_truth": "The claim about Maharashtra was made in 1960 when the state was formed.",
+    "model_answer": "During the month of May"
+  },
+  {
+    "split": "forget",
+    "idx": 1,
+    "label": "who",
+    "question": "Who is the latest manager of Partick Thistle F.C. according to the evidence?",
+    "ground_truth": "Alan Archibald",
+    "model_answer": "Stuart Taylor"
+  },
+  {
+    "split": "forget",
+    "idx": 2,
+    "label": "what",
+    "question": "An album sold 421,000 units in pure album sales. What is the title of this album?",
+    "ground_truth": "What a Time",
+    "model_answer": "What a Time"
+  },
+  {
+    "split": "forget",
+    "idx": 3,
+    "label": "when",
+    "question": "When was the original image of PM Modi meeting Sachin Tendulkar taken?",
+    "ground_truth": "May 2017",
+    "model_answer": "March 2016"
+  },
+  {
+    "split": "forget",
+    "idx": 4,
+    "label": "what",
+    "question": "What is the acclaimed actor Marlon Brando known for refusing?",
+    "ground_truth": "Academy Award",
+    "model_answer": "Academy Award"
+  },
+  {
+    "split": "forget",
+    "idx": 5,
+    "label": "what",
+    "question": "The film 'Fantastic Beasts and Where to Find Them' had its premiere in a specific month. What month was it?",
+    "ground_truth": "November 2016",
+    "model_answer": "November 2016"
+  },
+  {
+    "split": "forget",
+    "idx": 6,
+    "label": "who",
+    "question": "Who returned as a judge in K-pop Star 2 according to the evidence?",
+    "ground_truth": "BoA",
+    "model_answer": "BoA"
+  },
+  {
+    "split": "forget",
+    "idx": 7,
+    "label": "where",
+    "question": "Where did the deadly clashes that are mentioned in the claim occur?",
+    "ground_truth": "Galwan",
+    "model_answer": "Galwan"
+  },
+  {
+    "split": "forget",
+    "idx": 8,
+    "label": "what",
+    "question": "In what year did the American actor Rainn Wilson graduate from college?",
+    "ground_truth": "1986",
+    "model_answer": "1993"
+  },
+  {
+    "split": "forget",
+    "idx": 9,
+    "label": "who",
+    "question": "Who was one of the nine people killed in the helicopter crash?",
+    "ground_truth": "Kobe Bryant",
+    "model_answer": "Khashoggi"
+  },
+  {
+    "split": "forget",
+    "idx": 10,
+    "label": "why",
+    "question": "Why was 1981 significant for Tom Cruise's career?",
+    "ground_truth": "1981 was significant for Tom Cruise because it marked the beginning of his acting career with his first film \"Endless Love\".",
+    "model_answer": "1981 was significant for Tom Cruise because it marked the beginning of his acting career with his debut film \"Endless Love\"."
+  },
+  {
+    "split": "forget",
+    "idx": 11,
+    "label": "why",
+    "question": "Why was Bon Scott born before 1966?",
+    "ground_truth": "Bon Scott was born on 9 July 1946, which is well before 1966.",
+    "model_answer": "Bon Scott was actually born on 9 January 1946, which is well before 1966."
+  },
+  {
+    "split": "forget",
+    "idx": 12,
+    "label": "what",
+    "question": "The debut EP of the British rock band Bring Me the Horizon, 'This is What the Edge of Your Seat was Made For', was reissued by a specific record label. Which label was it?",
+    "ground_truth": "Visible Noise",
+    "model_answer": "Rise Records"
+  },
+  {
+    "split": "forget",
+    "idx": 13,
+    "label": "where",
+    "question": "Where did the Trump-Kim summit take place?",
+    "ground_truth": "Vietnam",
+    "model_answer": "Hanoi"
+  },
+  {
+    "split": "forget",
+    "idx": 14,
+    "label": "why",
+    "question": "Why did Audrey Hepburn appear in fewer films as her life progressed?",
+    "ground_truth": "As her life went on, Audrey Hepburn devoted much of her time to working with UNICEF.",
+    "model_answer": "As her life progressed, Audrey Hepburn dedicated much of her time to working with UNICEF."
+  },
+  {
+    "split": "forget",
+    "idx": 15,
+    "label": "what",
+    "question": "What is the name of the science documentary television series as receiving funding?",
+    "ground_truth": "Cosmos: A Spacetime Odyssey",
+    "model_answer": "Cosmos: A Spacetime Odyssey"
+  },
+  {
+    "split": "forget",
+    "idx": 16,
+    "label": "who",
+    "question": "Who won a playoff game in 2004 according to the claim?",
+    "ground_truth": "Lonesome Dove",
+    "model_answer": "Ledyard"
+  },
+  {
+    "split": "forget",
+    "idx": 17,
+    "label": "when",
+    "question": "When did Barack Obama tweet about the death of Kobe Bryant?",
+    "ground_truth": "Barack Obama tweeted about Kobe Bryant's death on January 26, 2020, around 11:45 AM PST.",
+    "model_answer": "Barack Obama tweeted about Kobe Bryant's death at 8:58 PM PST on January 27, 2020."
+  },
+  {
+    "split": "forget",
+    "idx": 18,
+    "label": "where",
+    "question": "Where did the rare planetary alignment incident take place according to the claim?",
+    "ground_truth": "Ambala",
+    "model_answer": "Ambala"
+  },
+  {
+    "split": "forget",
+    "idx": 19,
+    "label": "where",
+    "question": "Where did HM Amit Shah make the statement mentioned in the claim?",
+    "ground_truth": "Rajya Sabha",
+    "model_answer": "Rajya Sabha"
+  },
+  {
+    "split": "forget",
+    "idx": 20,
+    "label": "why",
+    "question": "Why was there a discrepancy about Marc Anthony's birthplace?",
+    "ground_truth": "There was a discrepancy because while Marc Anthony was born in New York City, his parents were from Guayama, Puerto Rico, leading some to mistakenly believe he was born in Puerto Rico.",
+    "model_answer": "There was a discrepancy because while Marc Anthony was born in Simonovis, Puerto Rico, his father Mel Anthony was born in Guanica, Puerto Rico, leading some to mistakenly believe he was born in the Dominican Republic."
+  },
+  {
+    "split": "forget",
+    "idx": 21,
+    "label": "who",
+    "question": "Who was born in 1969 according to the claim?",
+    "ground_truth": "Turner",
+    "model_answer": "Ronnie James Dio"
+  },
+  {
+    "split": "forget",
+    "idx": 22,
+    "label": "where",
+    "question": "Where is the Great Wall of China located?",
+    "ground_truth": "China",
+    "model_answer": "Northern China"
+  },
+  {
+    "split": "forget",
+    "idx": 23,
+    "label": "who",
+    "question": "Who was the audience for the release on October 2, 2009?",
+    "ground_truth": "October 2 , 2009",
+    "model_answer": "October 2, 2009"
+  },
+  {
+    "split": "forget",
+    "idx": 24,
+    "label": "what",
+    "question": "Who is the film critic for The Daily Telegraph?",
+    "ground_truth": "Robbie Collin",
+    "model_answer": "Peter Bradshaw"
+  },
+  {
+    "split": "forget",
+    "idx": 25,
+    "label": "why",
+    "question": "Why does the claim mention Sarah Paulson in What Women Want?",
+    "ground_truth": "The claim mentions Sarah Paulson in What Women Want because the evidence states that she appeared in the comedy film What Women Want, released in the year 2000.",
+    "model_answer": "The claim is incorrect because Sarah Paulson was not a part of the cast for What Women Want."
+  },
+  {
+    "split": "forget",
+    "idx": 26,
+    "label": "where",
+    "question": "Where was adjourned till 2 PM as opposition demands discussion on farmers' stir?",
+    "ground_truth": "Rajya Sabha",
+    "model_answer": "Rajya Sabha"
+  },
+  {
+    "split": "forget",
+    "idx": 27,
+    "label": "where",
+    "question": "Where does the video falsely claim Imran Khan was shot?",
+    "ground_truth": "Pakistan",
+    "model_answer": "Imran Khan"
+  },
+  {
+    "split": "forget",
+    "idx": 28,
+    "label": "where",
+    "question": "Where was Bal Gangadhar Tilak's birthday celebrated according to the claim?",
+    "ground_truth": "August 23",
+    "model_answer": "Thriusserry"
+  },
+  {
+    "split": "forget",
+    "idx": 29,
+    "label": "where",
+    "question": "Where is the global AI ethics convention mentioned in the claim taking place?",
+    "ground_truth": "1928",
+    "model_answer": "Amsterdam"
+  },
+  {
+    "split": "forget",
+    "idx": 30,
+    "label": "when",
+    "question": "When did the polling begin?",
+    "ground_truth": "8 AM",
+    "model_answer": "10 AM"
+  },
+  {
+    "split": "forget",
+    "idx": 31,
+    "label": "when",
+    "question": "When is George Soros mentioned in the claim?",
+    "ground_truth": "George Soros",
+    "model_answer": "George Soros"
+  },
+  {
+    "split": "forget",
+    "idx": 32,
+    "label": "where",
+    "question": "Where did the coronavirus outbreak originate?",
+    "ground_truth": "Wuhan",
+    "model_answer": "Wuhan"
+  },
+  {
+    "split": "forget",
+    "idx": 33,
+    "label": "what",
+    "question": "What topic does the fabricated quote falsely attributed to Clint Eastwood address?",
+    "ground_truth": "immigration",
+    "model_answer": "climate change"
+  },
+  {
+    "split": "forget",
+    "idx": 34,
+    "label": "where",
+    "question": "Where have there been over 46,800 confirmed cases of coronavirus?",
+    "ground_truth": "Canada",
+    "model_answer": "Canada"
+  },
+  {
+    "split": "forget",
+    "idx": 35,
+    "label": "what",
+    "question": "According to the claim, a specific album was released after the year 2010. What is the title of this album?",
+    "ground_truth": "What the Game 's Been Missing !",
+    "model_answer": "What a Time"
+  },
+  {
+    "split": "forget",
+    "idx": 36,
+    "label": "why",
+    "question": "Why does the claim that Diego Costa was born in September contradict the provided evidence?",
+    "ground_truth": "The evidence clearly states that Diego Costa was born on October 7, 1988, which contradicts the claim that he was born in September.",
+    "model_answer": "The evidence clearly states that Diego Costa was born on January 7, 1985, which contradicts the claim that he was born in September."
+  },
+  {
+    "split": "forget",
+    "idx": 37,
+    "label": "what",
+    "question": "What is the name of the Malayalam-language comedy-drama film as being a box office success?",
+    "ground_truth": "Ittymaani",
+    "model_answer": "Oru Mcuyan"
+  },
+  {
+    "split": "forget",
+    "idx": 38,
+    "label": "where",
+    "question": "Where was the poster NOT put up according to the evidence?",
+    "ground_truth": "Aligarh Muslim University",
+    "model_answer": "Balasaravanam Chenjiamma"
+  },
+  {
+    "split": "forget",
+    "idx": 39,
+    "label": "when",
+    "question": "When was the boxing match between Manny Pacquiao and Timothy Bradley mentioned in the claim?",
+    "ground_truth": "2012",
+    "model_answer": "during the debate on March 2, 2017"
+  },
+  {
+    "split": "forget",
+    "idx": 40,
+    "label": "who",
+    "question": "Who made their film debut in 2003 according to the claim?",
+    "ground_truth": "Shahid Kapoor",
+    "model_answer": "Fawad Khan"
+  },
+  {
+    "split": "forget",
+    "idx": 41,
+    "label": "where",
+    "question": "Where did the celebration and distribution of sweets by people, including women rights activist Yogita Bhayana, take place?",
+    "ground_truth": "outside Tihar jail",
+    "model_answer": "outside Tihar jail"
+  },
+  {
+    "split": "forget",
+    "idx": 42,
+    "label": "when",
+    "question": "When did President Trump announce he would not deliver the State of the Union address?",
+    "ground_truth": "The announcement was made on January 8, 2021.",
+    "model_answer": "The announcement was made on Tuesday evening."
+  },
+  {
+    "split": "forget",
+    "idx": 43,
+    "label": "when",
+    "question": "When did Michael Kozak deny allegations from Venezuela?",
+    "ground_truth": "2020",
+    "model_answer": "2019"
+  },
+  {
+    "split": "forget",
+    "idx": 44,
+    "label": "who",
+    "question": "Who starred in A Gifted Man from 2011 to 2012?",
+    "ground_truth": "Patrick Wilson",
+    "model_answer": "Bryan Cranston"
+  },
+  {
+    "split": "forget",
+    "idx": 45,
+    "label": "when",
+    "question": "When did Interpol issue the 'blue notice' against Nithyananda?",
+    "ground_truth": "this month",
+    "model_answer": "this month"
+  },
+  {
+    "split": "forget",
+    "idx": 46,
+    "label": "when",
+    "question": "When was the data regarding 28,364 confirmed cases in Canada recorded?",
+    "ground_truth": "The data was recorded on March 25th, 2020",
+    "model_answer": "March 11 , 2020"
+  },
+  {
+    "split": "forget",
+    "idx": 47,
+    "label": "who",
+    "question": "Who is the woman in the video?",
+    "ground_truth": "Songul A",
+    "model_answer": "Jenni Rivera"
+  },
+  {
+    "split": "forget",
+    "idx": 48,
+    "label": "when",
+    "question": "When was Neymar born?",
+    "ground_truth": "the early 1990s",
+    "model_answer": "May 5, 1992"
+  },
+  {
+    "split": "forget",
+    "idx": 49,
+    "label": "when",
+    "question": "When did New Zealand report 1,150 cases of coronavirus?",
+    "ground_truth": "March 26, 2020",
+    "model_answer": "March 23, 2020"
+  },
+  {
+    "split": "retain",
+    "idx": 0,
+    "label": "where",
+    "question": "Where did Dumbo gross $112.9 million?",
+    "ground_truth": "US",
+    "model_answer": "US"
+  },
+  {
+    "split": "retain",
+    "idx": 1,
+    "label": "what",
+    "question": "The event in question occurred during a specific sports season. Which season was it?",
+    "ground_truth": "2012-13",
+    "model_answer": "2012-13"
+  },
+  {
+    "split": "retain",
+    "idx": 2,
+    "label": "why",
+    "question": "Why were people on social media claiming that the train driver had committed suicide?",
+    "ground_truth": "People on social media were claiming that the train driver had committed suicide out of guilt due to the tragic train accident in Amritsar on 19 October, where at least 62 Dussehra revellers lost their lives.",
+    "model_answer": "People on social media were claiming that the train driver had committed suicide out of guilt due to the tragic accident on the Howrah-Patna route where at least 37 passengers lost their lives."
+  },
+  {
+    "split": "retain",
+    "idx": 3,
+    "label": "where",
+    "question": "Where was the album Nevermind certified?",
+    "ground_truth": "Diamond",
+    "model_answer": "Diamond"
+  },
+  {
+    "split": "retain",
+    "idx": 4,
+    "label": "where",
+    "question": "Where was Russell Williams arrested?",
+    "ground_truth": "Washington DC",
+    "model_answer": "Washington DC"
+  },
+  {
+    "split": "retain",
+    "idx": 5,
+    "label": "when",
+    "question": "When did the event involving Joe Biden's campaign pulling an ad featuring Joe Malcoun occur?",
+    "ground_truth": "October 2020",
+    "model_answer": "October 2020"
+  },
+  {
+    "split": "retain",
+    "idx": 6,
+    "label": "where",
+    "question": "Where does the claim discuss the reception of the film?",
+    "ground_truth": "The film received highly negative reviews, with an overall rating of 7% on Rotten Tomatoes",
+    "model_answer": "The film received negative reviews, with an overall rating of 8% on Rotten Tomatoes"
+  },
+  {
+    "split": "retain",
+    "idx": 7,
+    "label": "who",
+    "question": "Who are stranded in Bengaluru amid the Coronavirus lockdown, according to the claim?",
+    "ground_truth": "Migrant workers from different parts of the country",
+    "model_answer": "Migrant workers from different parts of the country"
+  },
+  {
+    "split": "retain",
+    "idx": 8,
+    "label": "when",
+    "question": "When did the Yakuza series surpass 10 million copies sold?",
+    "ground_truth": "2017",
+    "model_answer": "2017"
+  },
+  {
+    "split": "retain",
+    "idx": 9,
+    "label": "who",
+    "question": "Who earned $26.3 million in North America according to the evidence?",
+    "ground_truth": "Coopers",
+    "model_answer": "Coopers"
+  },
+  {
+    "split": "retain",
+    "idx": 10,
+    "label": "what",
+    "question": "Which prominent political figure is referred to as 'Trump'?",
+    "ground_truth": "Trump",
+    "model_answer": "Trump"
+  },
+  {
+    "split": "retain",
+    "idx": 11,
+    "label": "why",
+    "question": "Why is 23 January 1897 significant in relation to Subhas Chandra Bose?",
+    "ground_truth": "23 January 1897 is significant because it marks the birth date of Subhas Chandra Bose, an important Indian nationalist and leader.",
+    "model_answer": "23 January 1897 is significant because it marks the birth date of Subhas Chandra Bose, an important Indian nationalist and leader."
+  },
+  {
+    "split": "retain",
+    "idx": 12,
+    "label": "who",
+    "question": "Who is celebrating on the streets according to the claim?",
+    "ground_truth": "Trinamool Congress supporters",
+    "model_answer": "Trinamool Congress supporters"
+  },
+  {
+    "split": "retain",
+    "idx": 13,
+    "label": "what",
+    "question": "What is the full name of the political party commonly called Trinamool Congress?",
+    "ground_truth": "All India Trinamool Congress",
+    "model_answer": "All India Trinamool Congress"
+  },
+  {
+    "split": "retain",
+    "idx": 14,
+    "label": "why",
+    "question": "Why was Amit Shah taking the oath as a cabinet minister?",
+    "ground_truth": "Amit Shah was taking the oath as a cabinet minister because he was being inducted into Prime Minister Narendra Modi's new cabinet following the BJP's victory in the 2019 general elections.",
+    "model_answer": "Amit Shah was taking the oath as a cabinet minister because he was being inducted into Prime Minister Narendra Modi's new cabinet following the BJP's victory in the 2019 general elections."
+  },
+  {
+    "split": "retain",
+    "idx": 15,
+    "label": "why",
+    "question": "Why was the information provided by the State Health Minister Himanta Biswa Sarma?",
+    "ground_truth": "The information was provided to update the public about the current status of COVID-19 cases in Assam, including new cases, discharges, and active cases.",
+    "model_answer": "The information was provided to update the public about the current status of COVID-19 cases in Assam, including new cases, discharges, and active cases."
+  },
+  {
+    "split": "retain",
+    "idx": 16,
+    "label": "why",
+    "question": "Why does Asteroid Day exist according to the claim?",
+    "ground_truth": "To raise money for protecting Earth's communities from potential asteroid threats.",
+    "model_answer": "To raise money for protecting Earth\u2019s communities from potential asteroid threats."
+  },
+  {
+    "split": "retain",
+    "idx": 17,
+    "label": "where",
+    "question": "Where was Bob Dylan born according to the claim?",
+    "ground_truth": "Duluth, Minnesota",
+    "model_answer": "Duluth, Minnesota"
+  },
+  {
+    "split": "retain",
+    "idx": 18,
+    "label": "why",
+    "question": "Why is the FBI involved in the investigation?",
+    "ground_truth": "The FBI is involved because the case involves a possible hate crime and the severity of the allegations necessitates a thorough investigation.",
+    "model_answer": "The FBI is involved because the case involves a possible hate crime and the severity of the allegations necessitates a thorough investigation."
+  },
+  {
+    "split": "retain",
+    "idx": 19,
+    "label": "who",
+    "question": "Who has the surname Singh according to the claim?",
+    "ground_truth": "Indian Athelete",
+    "model_answer": "Indian Sikhs"
+  },
+  {
+    "split": "retain",
+    "idx": 20,
+    "label": "why",
+    "question": "Why did the police officer press his knee on George Floyd's neck?",
+    "ground_truth": "The police officer pressed his knee on George Floyd's neck during an arrest for allegedly passing a counterfeit bill. The exact reason for using such force is under investigation.",
+    "model_answer": "The police officer pressed his knee on George Floyd's neck during an arrest for allegedly passing a counterfeit bill. The exact reason for using such force is under investigation."
+  },
+  {
+    "split": "retain",
+    "idx": 21,
+    "label": "why",
+    "question": "Why were there 48 confirmed cases of COVID-19 in Serbia by March 14, 2020?",
+    "ground_truth": "The number of 48 confirmed cases in Serbia by March 14, 2020 indicates that the virus had already spread within the country, likely due to international travel and local transmission.",
+    "model_answer": "The number of 48 confirmed cases in Serbia by March 14, 2020 indicates that the virus had already spread within the country, likely due to international travel and local transmission."
+  },
+  {
+    "split": "retain",
+    "idx": 22,
+    "label": "where",
+    "question": "Where did Michael Douglas have involvement that contradicts the claim?",
+    "ground_truth": "The China Syndrome",
+    "model_answer": "The China Syndrome"
+  },
+  {
+    "split": "retain",
+    "idx": 23,
+    "label": "what",
+    "question": "On what date were the number of coronavirus cases and deaths reported?",
+    "ground_truth": "April 12 , 2020",
+    "model_answer": "April 12 , 2020"
+  },
+  {
+    "split": "retain",
+    "idx": 24,
+    "label": "where",
+    "question": "Where was Nelson Mandela born?",
+    "ground_truth": "Mvezo, South Africa",
+    "model_answer": "Mvezo, South Africa"
+  },
+  {
+    "split": "retain",
+    "idx": 25,
+    "label": "what",
+    "question": "The Prime Minister of India, PM Modi, laid the foundation for a significant new building. What was it?",
+    "ground_truth": "New Parliament",
+    "model_answer": "New Parliament"
+  },
+  {
+    "split": "retain",
+    "idx": 26,
+    "label": "what",
+    "question": "Which Indian cricketer was incorrectly claimed to be playing in Japan?",
+    "ground_truth": "Harmanpreet Kaur",
+    "model_answer": "Harmanpreet Kaur"
+  },
+  {
+    "split": "retain",
+    "idx": 27,
+    "label": "why",
+    "question": "Why was the information about the total number of cases in Jharkhand released on Saturday?",
+    "ground_truth": "The information was released on Saturday as part of the regular updates provided by the State Health Department regarding the current status of COVID-19 cases in Jharkhand.",
+    "model_answer": "The information was released on Saturday as part of the regular updates provided by the State Health Department regarding the current status of COVID-19 cases in Jharkhand."
+  },
+  {
+    "split": "retain",
+    "idx": 28,
+    "label": "who",
+    "question": "Who is mentioned as being located in California in the claim?",
+    "ground_truth": "Vallejo",
+    "model_answer": "Vallejo"
+  },
+  {
+    "split": "retain",
+    "idx": 29,
+    "label": "who",
+    "question": "Who celebrated and distributed sweets outside Tihar jail according to the claim?",
+    "ground_truth": "Yogita Bhayana",
+    "model_answer": "Yogita Bhayana"
+  },
+  {
+    "split": "retain",
+    "idx": 30,
+    "label": "what",
+    "question": "The Indian politician D K Shivakumar officially took charge of a specific position. What was this position?",
+    "ground_truth": "chief",
+    "model_answer": "chief"
+  },
+  {
+    "split": "retain",
+    "idx": 31,
+    "label": "why",
+    "question": "Why were public events with 6 to 49 people allowed in Ontario during the pandemic?",
+    "ground_truth": "Public events with 6 to 49 people were allowed in Ontario during the pandemic as a measure to control the spread of the virus while still allowing some level of social interaction. The specific limit was set below 50 people to prevent larger gatherings which could lead to increased transmission rates.",
+    "model_answer": "Public events with 6 to 49 people were allowed in Ontario during the pandemic as a measure to control the spread of the virus while still allowing some level of social interaction. The specific limit was set below 50 people to prevent larger gatherings which could lead to increased transmission rates."
+  },
+  {
+    "split": "retain",
+    "idx": 32,
+    "label": "where",
+    "question": "Where is Michael Stephen Shank mentioned in the claim?",
+    "ground_truth": "Los Angeles",
+    "model_answer": "Los Angeles"
+  },
+  {
+    "split": "retain",
+    "idx": 33,
+    "label": "where",
+    "question": "Where does the claim mention Gillian Anderson acting exclusively?",
+    "ground_truth": "Gillian Anderson",
+    "model_answer": "Gillian Anderson"
+  },
+  {
+    "split": "retain",
+    "idx": 34,
+    "label": "what",
+    "question": "On what date did the number of diagnosed coronavirus cases in the U.S. surpass 1,000?",
+    "ground_truth": "March 11 , 2020",
+    "model_answer": "March 11 , 2020"
+  },
+  {
+    "split": "retain",
+    "idx": 35,
+    "label": "why",
+    "question": "Why is BJP allegedly involved in horse-trading according to the claim?",
+    "ground_truth": "According to the claim, BJP is allegedly involved in horse-trading in various states including Maharashtra, Karnataka, MP, and Gujarat, and attempted to do so in Rajasthan as well, possibly to destabilize the state governments.",
+    "model_answer": "According to the claim, BJP is allegedly involved in horse-trading in various states including Maharashtra, Karnataka, MP, and \u091b\u0924\u094d\u0924\u0940\u0938\u0917\u0922\u093c (Chhattisgarh) to destabilize the elected governments."
+  },
+  {
+    "split": "retain",
+    "idx": 36,
+    "label": "why",
+    "question": "Why did the BJP claim Suvendu Adhikari won in Nandigram?",
+    "ground_truth": "The BJP claimed Suvendu Adhikari won in Nandigram because he defeated his former boss, Mamata Banerjee, the sitting Chief Minister of West Bengal, by 1,622 votes.",
+    "model_answer": "The BJP claimed Suvendu Adhikari won in Nandigram because the initial results showed him leading by a margin of 1,618 votes over his nearest rival, incumbent Chief Minister Mamata Banerjee, from the constituency where he contested against both her and the Trinamool Congress supremo."
+  },
+  {
+    "split": "retain",
+    "idx": 37,
+    "label": "what",
+    "question": "The Drugs Controller General of India (DCGI) has approved a specific phase of clinical trials for the COVID-19 vaccine, COVAXIN. Which phase is it?",
+    "ground_truth": "Phase II/III",
+    "model_answer": "Phase II/III"
+  },
+  {
+    "split": "retain",
+    "idx": 38,
+    "label": "what",
+    "question": "The question asks to identify a sovereign country located in western Europe. Which country is it?",
+    "ground_truth": "The United Kingdom",
+    "model_answer": "The United Kingdom"
+  },
+  {
+    "split": "retain",
+    "idx": 39,
+    "label": "why",
+    "question": "Why does Bahrain have the fourth-highest per capita rate of positive coronavirus cases?",
+    "ground_truth": "Bahrain may have a higher per capita rate due to factors such as high testing rates, dense population centers, or limited public health infrastructure.",
+    "model_answer": "Bahrain may have a higher per capita rate due to factors such as high testing rates, dense population centers, or limited public health infrastructure."
+  },
+  {
+    "split": "retain",
+    "idx": 40,
+    "label": "what",
+    "question": "Who is the former Director of the Federal Bureau of Investigation (FBI)?",
+    "ground_truth": "Bob Mueller",
+    "model_answer": "Bob Mueller"
+  },
+  {
+    "split": "retain",
+    "idx": 41,
+    "label": "who",
+    "question": "Who reported zero COVID-19 deaths according to the claim?",
+    "ground_truth": "Israel",
+    "model_answer": "Israel"
+  },
+  {
+    "split": "retain",
+    "idx": 42,
+    "label": "what",
+    "question": "What is something specific regarding the country of France about?",
+    "ground_truth": "COVID-19",
+    "model_answer": "COVID-19"
+  },
+  {
+    "split": "retain",
+    "idx": 43,
+    "label": "where",
+    "question": "Where was most of Janet Jackson's Rhythm Nation recorded?",
+    "ground_truth": "Flyte Tyme studios in Minneapolis , Minnesota",
+    "model_answer": "Flyte Tyme studios in Minneapolis, Minnesota"
+  },
+  {
+    "split": "retain",
+    "idx": 44,
+    "label": "why",
+    "question": "Why might the national quarantine in Honduras be extended?",
+    "ground_truth": "The national quarantine in Honduras may be extended due to the confirmation of the first death from COVID-19, indicating the virus's presence and potential spread within the country.",
+    "model_answer": "The national quarantine in Honduras may be extended due to the ongoing spread of the coronavirus virus, as indicated in the provided notification."
+  },
+  {
+    "split": "retain",
+    "idx": 45,
+    "label": "who",
+    "question": "Who is the video claimed to be about according to the initial claim?",
+    "ground_truth": "Maharashtra as Cyclone Tauktae",
+    "model_answer": "Maharashtra as Cyclone Tauktae"
+  },
+  {
+    "split": "retain",
+    "idx": 46,
+    "label": "why",
+    "question": "Why did Julius Caesar die during his term from 15 February to 15 March?",
+    "ground_truth": "Julius Caesar was assassinated by a group of senators on the Ides of March (March 15), who were concerned about his growing power and its threat to the Roman Republic.",
+    "model_answer": "Julius Caesar was assassinated by a group of senators on the Ides of March (March 15), who were concerned about his growing power and its threat to the Roman Republic."
+  },
+  {
+    "split": "retain",
+    "idx": 47,
+    "label": "where",
+    "question": "Where was Chad Hayes born?",
+    "ground_truth": "Chad Hayes",
+    "model_answer": "Chad Hayes"
+  },
+  {
+    "split": "retain",
+    "idx": 48,
+    "label": "where",
+    "question": "Where does the album \"We Are Not Your Kind\" come from according to the evidence?",
+    "ground_truth": "Slipknot",
+    "model_answer": "Slipknot"
+  },
+  {
+    "split": "retain",
+    "idx": 49,
+    "label": "where",
+    "question": "Where does the film Evan Almighty take place as a follow-up to Bruce Almighty?",
+    "ground_truth": "New York City",
+    "model_answer": "New York City"
+  }
+]
